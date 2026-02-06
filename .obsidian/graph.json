@@ -1,0 +1,58 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "path:\"Universitat/ALGORÍTMICA I COMPLEXITAT\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 6076630
+      }
+    },
+    {
+      "query": "path:\"Universitat/ARQUITECTURA DE COMPUTADORS\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 12271258
+      }
+    },
+    {
+      "query": "path:\"Universitat/INTERACCIÓ PERSONA-ORDINADOR\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 4241428
+      }
+    },
+    {
+      "query": "path:\"Universitat/LLENGUATGES, AUTÒMATS I GRAMÀTIQUES\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 16002571
+      }
+    },
+    {
+      "query": "path:Universitat/XARXES  ",
+      "color": {
+        "a": 1,
+        "rgb": 4068567
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": -1,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.587318087318087,
+  "repelStrength": 11.995841995842,
+  "linkStrength": 0.91995841995842,
+  "linkDistance": 87,
+  "scale": 0.7104201183956272,
+  "close": true
+}
