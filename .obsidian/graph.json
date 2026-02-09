@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "path:\"Universitat/ALGORÍTMICA I COMPLEXITAT\"  ",
@@ -49,10 +49,10 @@
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
   "collapse-forces": false,
-  "centerStrength": 0.587318087318087,
+  "centerStrength": 0.470893970893971,
   "repelStrength": 11.995841995842,
   "linkStrength": 0.91995841995842,
   "linkDistance": 87,
-  "scale": 0.7104201183956272,
+  "scale": 0.6015399484491155,
   "close": true
 }
