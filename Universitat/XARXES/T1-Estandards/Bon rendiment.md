@@ -28,3 +28,5 @@ $$
 - Cabal: Quantitat d’informació que es pot transferir per unitat de temps.
 
 ![[Pasted image 20260205164022.png]]
+
+
