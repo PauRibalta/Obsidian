@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e4b6d3cabd800025",
+        "id": "3c5525d8efcc2d5c",
         "type": "tabs",
         "children": [
           {
-            "id": "33d7088c7f7b6538",
+            "id": "e49d1caa9d7a5874",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universitat/ALGORÍTMICA I COMPLEXITAT/T2/T2-Anàlisi d'algorismes.md",
+                "file": "Universitat/ALGORÍTMICA I COMPLEXITAT/T3/T3-Recursivitat.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "T2-Anàlisi d'algorismes"
+              "title": "T3-Recursivitat"
             }
           }
         ]
@@ -180,7 +180,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 290.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -195,52 +195,53 @@
       "graph:Open graph view": false
     }
   },
-  "active": "33d7088c7f7b6538",
+  "active": "e49d1caa9d7a5874",
   "lastOpenFiles": [
-    "Universitat/ALGORÍTMICA I COMPLEXITAT/T2/Pasted image 20260210175218.png",
     "Universitat/ALGORÍTMICA I COMPLEXITAT/Algorítmica i Complexitat.md",
+    "Universitat/ALGORÍTMICA I COMPLEXITAT/T3/T3-Recursivitat.md",
     "Universitat/ALGORÍTMICA I COMPLEXITAT/T2/T2-Anàlisi d'algorismes.md",
+    "Universitat/ALGORÍTMICA I COMPLEXITAT/T3",
+    "Universitat/XARXES/T3-Nivell físic/T3-Nivell físic.md",
+    "Universitat/XARXES/Xarxes.md",
+    "Universitat/XARXES/T2-Models OSI i TCP-IP/T2-Models OSI i TCP-IP.md",
+    "Universitat/XARXES/T3-Nivell físic",
+    "Universitat/XARXES/T1-Estàndards/T1-Estàndards.md",
+    "Universitat/XARXES/Sessions de pràctiques/Sessió 1.md",
+    "Universitat/XARXES/Sessions de pràctiques/Sessió 2.md",
+    "Universitat/INTERACCIÓ PERSONA-ORDINADOR/Interacció Persona-Ordinador.md",
+    "Universitat/INTERACCIÓ PERSONA-ORDINADOR/T5-Prototipat.md",
+    "Universitat/XARXES/Sessions de pràctiques/Sessions de pràctiques.md",
+    "Universitat/XARXES/Sessions de pràctiques",
+    "Universitat/INTERACCIÓ PERSONA-ORDINADOR/T4-Disseny Centrar en l'Usuari (DCU).md",
+    "Universitat/ARQUITECTURA DE COMPUTADORS/Memòria cache.md",
+    "Universitat/ARQUITECTURA DE COMPUTADORS/T1-Jerarquia de memòria.md",
+    "Universitat/ARQUITECTURA DE COMPUTADORS/Arquitectura de Computadors.md",
+    "Universitat/ALGORÍTMICA I COMPLEXITAT/T2/Pasted image 20260210175218.png",
     "Universitat/ALGORÍTMICA I COMPLEXITAT/T1/Correctness of algorithms.md",
     "Universitat/ALGORÍTMICA I COMPLEXITAT/T2",
     "Universitat/ALGORÍTMICA I COMPLEXITAT/T1/T1-Formal Specification of Algorithms.md",
     "Universitat/ALGORÍTMICA I COMPLEXITAT/T1",
-    "Universitat/XARXES/T2-Models OSI i TCP-IP/T2-Models OSI i TCP-IP.md",
     "Universitat/XARXES/T2-Models OSI i TCP-IP/Arquitectura de xarxa.md",
-    "Universitat/XARXES/Xarxes.md",
-    "Universitat/XARXES/Sessions de pràctiques.md",
     "Universitat/XARXES/T2-Models OSI i TCP-IP",
-    "Universitat/XARXES/T1-Estandards/T1-Estàndards.md",
     "T2-Models OSI i TCP/IP.md",
     "T2-Models OSI i TCP",
     "Universitat/ÍNDEX.md",
     "Universitat/LLENGUATGES, AUTÒMATS I GRAMÀTIQUES/Llenguatges, autòmats i gramàtiques.md",
     "Universitat/LLENGUATGES, AUTÒMATS I GRAMÀTIQUES/T1-Alfabets i llenguatges.md",
-    "Universitat/INTERACCIÓ PERSONA-ORDINADOR/Interacció Persona-Ordinador.md",
-    "Universitat/INTERACCIÓ PERSONA-ORDINADOR/T4-Disseny Centrar en l'Usuari (DCU).md",
-    "Universitat/ARQUITECTURA DE COMPUTADORS/Arquitectura de Computadors.md",
-    "Universitat/ARQUITECTURA DE COMPUTADORS/T1-Jerarquia de memòria.md",
-    "Universitat/ARQUITECTURA DE COMPUTADORS/Memòria cache.md",
     "Universitat/ARQUITECTURA DE COMPUTADORS/Organització de la informació.md",
-    "Universitat/XARXES/T1-Estandards/Bon rendiment.md",
+    "Universitat/XARXES/T1-Estàndards/Bon rendiment.md",
     "2026-02-09.md",
-    "Universitat/XARXES/T1-Estandards/Pasted image 20260205164022.png",
+    "Universitat/XARXES/T1-Estàndards/Pasted image 20260205164022.png",
     "Universitat/ARQUITECTURA DE COMPUTADORS/Pasted image 20260205174853.png",
     "Universitat/ARQUITECTURA DE COMPUTADORS/Pasted image 20260205173707.png",
     "Universitat/INTERACCIÓ PERSONA-ORDINADOR/Pasted image 20260209153003.png",
-    "Untitled.md",
-    "Universitat/ALGORÍTMICA I COMPLEXITAT/T1/What is an algorithm.md",
     "New Document de text.txt",
-    "Universitat/XARXES/T1-Estandards/Connectivitat.md",
-    "Universitat/XARXES/T1-Estandards/Suport de serveis comuns.md",
-    "Universitat/XARXES/T1-Estandards/Pasted image 20260205163103.png",
-    "Universitat/XARXES/T1-Estandards/Pasted image 20260205163042.png",
+    "Universitat/XARXES/T1-Estàndards/Pasted image 20260205163103.png",
+    "Universitat/XARXES/T1-Estàndards/Pasted image 20260205163042.png",
     "Pasted image 20260205163037.png",
-    "Universitat/XARXES/T1-Estandards/Pasted image 20260205154801.png",
+    "Universitat/XARXES/T1-Estàndards/Pasted image 20260205154801.png",
     "Pasted image 20260205154757.png",
-    "Universitat/XARXES/T1-Estandards",
-    "Universitat/INTERACCIÓ PERSONA-ORDINADOR",
-    "Universitat/LLENGUATGES, AUTÒMATS I GRAMÀTIQUES",
-    "Universitat/ALGORÍTMICA I COMPLEXITAT",
-    "Universitat"
+    "Universitat/XARXES/T1-Estàndards",
+    "Universitat/INTERACCIÓ PERSONA-ORDINADOR"
   ]
 }

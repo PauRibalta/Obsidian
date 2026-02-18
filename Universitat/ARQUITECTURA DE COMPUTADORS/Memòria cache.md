@@ -65,6 +65,8 @@ Quan la CPU vol llegir:
 Dubtes : MP % MC = posició --> en quin algorisme s'aplica?
 
 - Directa : no és el bloc al que està, sinó a la posició que està dins del bloc. posició = MP % MC
+- Completament associativa
+- Associativa per conjunts
 
 $$
 \text{Taxa d'encerts (\%)} = \frac{\text{Nombre d'encerts}}{\text{Nombre total d'intents}} \times 100
