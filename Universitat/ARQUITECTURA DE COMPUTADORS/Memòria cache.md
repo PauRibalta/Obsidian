@@ -71,3 +71,5 @@ Dubtes : MP % MC = posició --> en quin algorisme s'aplica?
 $$
 \text{Taxa d'encerts (\%)} = \frac{\text{Nombre d'encerts}}{\text{Nombre total d'intents}} \times 100
 $$
+
+file:///C:/Users/enric/Downloads/guia_memoria_cache.html
