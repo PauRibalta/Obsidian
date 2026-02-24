@@ -1,8 +1,8 @@
 ## Arquitectura de xarxa
 ### 1. Capes i protocols
-El disseny arquitectural d’una xarxa es fa seguint un model de capes. Cada capa engloba un conjunt de tasques espec´ıfiques, independents de les altres capes. Un model de capes suposa dos avantatges: 
-1. Descomposa el problema en altres m´es tractables 
-2. El disseny ´es m´es modular
+El disseny arquitectural d’una xarxa es fa seguint un model de capes. Cada capa engloba un conjunt de tasques específiques, independents de les altres capes. Un model de capes suposa dos avantatges: 
+1. Descomposa el problema en altres més tractables 
+2. El disseny és més modular
 
 L’estructura de capes comporta dos fets: 
 - La capa superior empra els serveis de comunicacions que li ofereix la capa inferior 
