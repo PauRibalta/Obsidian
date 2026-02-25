@@ -3,7 +3,7 @@
 
 ### Característiques de la IU
 - **Elements interactius**: S'ha de notar que aquests elements són interactius. Exemples: Els enllaços han de ser de color blau, text interactiu, botons amb ombres.
-- **Consistència**: Quan utiltizem el sistema, ha de donar la sensació que estem sempre al mateix sistema. 
+- **Consistència**: Quan utilitzem el sistema, ha de donar la sensació que estem sempre al mateix sistema. 
 - **Ubicació**: 
 - **Navegació**: 
 - **Identitat**: Ha de quedar clar a quina aplicació estàs. Com fer-ho? Colors associats a la marca, posar el logo a la web.
