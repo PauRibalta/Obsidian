@@ -104,3 +104,84 @@ $$
 - **QAM:** Quadrature Amplitude Modulation 
 - ![[Pasted image 20260226152127.png]]
 
+## Entramat
+- En els medis de transmissió es produeixen alteracions del senyal → errors en la informació que transporten
+- Per tant, cal controlar i gestionar l’intercanvi de les dades
+- El control es duu a terme emprant un protocol entre emissor i receptor. El protocol implica afegir informació de control a les dades.
+- Les dades s’estructuren en trames que, a banda de les pròpies  dades, inclouen capçaleres i camps de control.
+- La informacio addicional comporta una disminució del rendiment, en bps, de les línies de transmissió.
+	- Taxa bruta: Velocitat de transmissió (dades + info. control)
+	- Taxa útil: Velocitat de transmissió de la informació o útil (dades)
+	  
+- #### Mètodes per generar la trama:
+	- **Protocols orientats a caràcter**
+		- **Indicadors d’inici i final (sentinella)**
+			- Caràcters especials per indicar l’inici i el final de les dades. Si apareixen en les dades caràcters de control s’anteposa el caràcter DLE  data-link escape
+				- **BISYNC** (Binary Synchonous Communication)
+					- ![[Pasted image 20260226194305.png]]
+			  
+				- **PPP** (Point-to-Point Protocol)
+					- ![[Pasted image 20260226194336.png]]
+			  
+		- **Comptadors de caràcters**
+			- Inclouen dins de la trama un camp que indica la longitud, en caràcters, de les dades
+				- **DDCMP** (Digital Data Communication Message Protocol)
+					- ![[Pasted image 20260226194523.png]]
+	- **Protocols orientats a bit**
+		- Consideren les dades com una seqüencia de bits
+		- Cada trama conte una seqüencia de bits d’inici i una de final
+		- Si les dades contenen la seqüencia d’inici o final s’insereix un bit per diferenciar-les
+			- **HDLC** (High-Level Data Link Control)
+				- ![[Pasted image 20260226194732.png]]
+				  
+		- Control de les seqüencies d’inici i final:
+			- Si en les dades apareixen 5 bits 1 consecutius, el transmissor insereix un 0 per diferenciar-ho de les seqüències d’inici i final.
+			- El receptor, en rebre 5 bits 1 consecutius, mira el valor del següent bit:
+				- 0 → Es tracta d’un bit de farciment i el menysprea
+				- 1 → Cal comprovar el següent bit
+					- 0 → Final de trama
+					- 1 → Error en les dades, espera rebre el final de trama i la rebutja
+					  
+	- **Entramat síncron**
+		- Basat en un únic rellotge d’alta precisió (rellotge mestre)
+		- Hi ha un flux de trames constant encara que no hi hagi informació per transmetre
+			- **SONET** (Synchronous Optical Network)
+				- Un sistema SONET esta format per commutadors, multiplexors i repetidors
+				- ![[Pasted image 20260226195536.png]]
+				  
+				- L’element basic de SONET és la trama STS-1 ( Synchronous Transport Signal-1).
+				- Constituïda per 810 octets que es transmeten cada 125µs (VT = 51.84 Mbps).
+				- La trama SONET es pot representar com una matriu de 9 files per 90 columnes (9 x 90 bytes).
+				- Les 3 primeres columnes es reserven per informació d’administració del sistema.
+					- Les 3 primeres files es reserven per informacio suplementària de les seccions
+					- Les 6 files restants es destinen a informacio suplementària de línia
+				- Les 87 columnes restants contenen les dades d’usuari SPE (Synchronous Payload Envelope)
+				- Com la SPE pot començar en qualsevol lloc de la trama, s’empra la primera fila de la informacio suplementària de línia com a punter al primer byte de la SPE
+				- Dins de la SPE, el primer byte conte informació suplementària de la ruta
+					- ![[Pasted image 20260226195918.png]]
+					  
+				- Emprant TDM (Time-Division Multiplexing), SONET combina diverses STS-1 per formar una STS-n. Cada STS-n es genera amb els bytes de les n STS-1.
+					- ![[Pasted image 20260226195952.png]]
+					  
+## Detecció d'errors
+
+Forma part del control de l’enllaç¸ de dades i es imprescindible per a la comunicació entre nodes.
+- ![[Pasted image 20260226200141.png]]
+- ![[Pasted image 20260226200201.png]]
+- La tècnica de detecció d’errors consisteix en afegir informació addicional en la trama que permeti al receptor determinar si s’han produït errors durant la transmissió
+- Donat un missatge de n bits, la quantitat de bits a afegir per al control d’errors, k, ha de complir: k << n.
+  
+- #### Comprovació de paritat
+	- Consisteix en afegir un bit de paritat al final d’un bloc de dades. El valor d’aquest bit es determina de forma que el bloc resultant tingui un nombre parell de 1 (paritat parell) o bé un nombre senar (paritat senar)
+	  
+	- **Paritat unidimensional**
+		- Les dades es divideixen en blocs de n bits i a cada bloc s’afegeix el bit de paritat.
+		- El receptor calcula la paritat de cada bloc i ho compara amb el bit de paritat rebut per determinar si s’han produït errors. Aquest mètode detecta els errors que afectin a un nombre senar de bits.
+		- Un exemple típic era la transmissió ASCII: A cada caràcter ASCII de 7 bits se li afegia un de paritat
+			- ![[Pasted image 20260226200440.png]]
+			  
+	- **Paritat bidimensional**
+		- Es consideren les dades com una matriu de bits i es calcula la paritat tant de les files com de les columnes.
+		  
+			- ![[Pasted image 20260226200545.png]]
+			- 
