@@ -85,3 +85,22 @@ $$
 - N = 4/5 en 4B5B
 - N= 1 en NRZ i NRZI
 - N = 0,5 en Manchester
+
+## Senyals modulats
+
+#### Fases 
+- La modulació/demodulació de senyals es produeix en 3 fases: 
+	- Agrupació de bits en símbols. P.e. modulació quaternària:
+		- 00 → s00 
+		- 01 → s01 
+		- 10 → s10 
+		- 11 → s11
+		- en aquest cas, Vt (vel. transmissió) = 2 · Vm (velocitat de modulació)
+	- A cada símbol se li atorga una amplada i fase determinada: constel·lació de símbols
+	- Els símbols es transmeten a la freqüència portadora  adequada al medi $\omega_p = 2\pi f_p$
+
+#### Constel·lacions
+- **BPSK:** Binary Phase Shift Keying
+- **QAM:** Quadrature Amplitude Modulation 
+- ![[Pasted image 20260226152127.png]]
+
