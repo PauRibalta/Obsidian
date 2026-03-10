@@ -1,4 +1,4 @@
-# Medis de transmissió
+c# Medis de transmissió
 
 1. **Conceptes teòrics**:
 	- **Medi de transmissió:** Camí físic que permet el transport de l’energia del senyal.
@@ -184,4 +184,19 @@ Forma part del control de l’enllaç¸ de dades i es imprescindible per a la co
 		- Es consideren les dades com una matriu de bits i es calcula la paritat tant de les files com de les columnes.
 		  
 			- ![[Pasted image 20260226200545.png]]
-			- 
+FALTEN APUNTS DIAPOS 83 A 94
+
+## Protocols ARQ
+
+
+#### Finestra lliscant
+- S'aprofita millor el canal
+- Evita l’espera d’un ACK per poder enviar una altra trama
+- Permet enviar un conjunt de trames sense tenir que esperar reconeixement de la trama n per enviar la trama n + 1
+- Variables inicialitzades en el transmissor:
+	- SWS (Sender Window Size): Indica la quantitat màxima de trames que es poden enviar amb reconeixement pendent
+	- LAR (Last Acknowledgement Received): Número de seqüència de la trama de la que s’ha rebut l’últim ACK
+	- LFS (Last Frame Sent): Numero de seqüència de la última trama enviada
+- El transmissor ha de mantenir sempre que:
+	- LFS − LAR ≤ SWS
+
