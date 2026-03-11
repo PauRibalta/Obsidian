@@ -17,7 +17,7 @@ Psicologia cognitiva: disciplina que estudia el sistema de processament de la in
 
 ### Sistemes sensorials
 Els nostres sistemes sensorials estan formats per els sensors (sentits) i els actuadors(dits, boca,...)
-- Vista: captar el món a través de la llum que ens arriba als ulls.
+- **Vista:** captar el món a través de la llum que ens arriba als ulls.
 	- Sensació: captació de l'estímul físic i transformació en impuls nerviós.
 	- Percepció: assignació de significat a l'estímul captat.
 	- Sistema visual: sensible a les diferències de color i brillantor
@@ -34,16 +34,23 @@ Els nostres sistemes sensorials estan formats per els sensors (sentits) i els ac
 	- Interpretació dels colors: associem els colors a certs conceptes i emocions.
 	- Fovea vs perifèria: la fovea és la zona de la retina amb major resolució, és el focus d'atenció, on l'usuari està posant la seva atenció.
 		- Recomanacions: marcar els errors de forma clara i on es vegin de forma clara
-- Tacte: 
+- **Tacte:** 
 	- Pantalles tàctils: impliquen atenció
 	- Dispositius haptics: interfícies que simulen el sentit del tacte, la pressió o el moviment.
-- Oïda: 
+- **Oïda:** 
 	- Menús auditius: es solen fer servir quan no hi ha sistema visual o quan no es pot prestar atenció visual o quan no es vol fer servir el sistema visual o per comoditat.
 	- Es pot fer servir amb altres sistemes
-- Olfacte
-- Moviment
-- Moviment corporal
-- Representació (associar imatges a altres coses per exemple)
+- **Olfacte**
+- **Moviment**
+- **Moviment corporal**
+- **Representació (associar imatges a altres coses per exemple)**
 
 ### Percepció
 Procés pel qual les persones adquireixen, interpreten i organitzen la informació sensorial. Representació particular del món real.
+
+En ella influeix:
+- **El passat:** el que hem vist fins avui influeix en la nostra manera de veure les coses.
+- **El present:** el context influeix en com percebem la realitat.
+- **El futur:** els nostres objectius immediats "filtren" les nostres percepcions de la realitat, optimitzant la tasca a realitzar.
+
+### Principis de Gestalt
