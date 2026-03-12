@@ -184,12 +184,70 @@ Forma part del control de l’enllaç¸ de dades i es imprescindible per a la co
 		- Es consideren les dades com una matriu de bits i es calcula la paritat tant de les files com de les columnes.
 		  
 			- ![[Pasted image 20260226200545.png]]
-FALTEN APUNTS DIAPOS 83 A 94
+			  
+			  
+- #### Suma de comprovació
+	- Empra l’aritmètica de complement a 1.
+		- Es consideren les dades com una seqüencia d’enters de 16 bits.
+		- Se sumen cadascun dels blocs de 16 bits.
+		- Si hi ha carry, aquest se suma al resultat.
+		- El complement a 1 del resultat s’empra com a suma de comprovació.
+	- Gran facilitat d’implementació software.
+	- Emprat com a deteccio d’errors en TCP/IP.
+		- ![[Pasted image 20260312113906.png]]
+		- ![[Pasted image 20260312113915.png]]
+		  
+- #### CRC
+	- Es el tipus més potent i més emprat.
+	- **Funcionament:**
+		- El **transmissor** i el **receptor** acorden prèviament un número (polinomi) que s'utilitzarà per calcular el CRC.
+		- Transmissor:
+			- El transmissor, partint dels n bits de les dades, genera una seqüencia de k bits que afegeix a les dades.
+			- El bloc resultant de n + k bits ha de ser divisible pel “número”  acordat.
+		- Receptor:
+			- El receptor divideix els n + k bits rebuts pel “número” acordat per obtenir el residu.
+			- Si el residu és diferent de zero, determina que les dades rebudes contenen errors.
+	- **Notació polinòmica:**
+		- Per efectuar les operacions s’utilitza l’aritmètica mòdul 2.
+		- La posició del bit indica l’exponent.
+		- Només s’inclouen els termes amb **bit = 1**.
+		- Cal escollir un polinomi divisor D(X) de grau r igual al nombre de bits del CRC.
+	- **Errors detectats pel CRC:**
+		- Suposem que a la informació enviada per el transmissor, B(X), s’afegeixen errors en la transmissió, E(X).
+		- Únicament els errors E(X) que siguin múltiples de D(X) no seran detectats. Sí detectarem:
+			- Errors d’un bit
+			- Errors dobles si D(X) te al menys tres factors
+			- Qualsevol nombre senar d’errors si D(X) te el factor (X+1)
+			- Errors en ràfegues de longitud inferior o igual a r
+			- Ràfegues grans d’errors:
+				- Ràfegues de longitud $r+1$ amb una probabilitat de $1 - \frac{1}{2^{r-1}}$
+				- Ràfegues de longitud superior a $r+1$ amb probabilitat $1 - \frac{1}{2^r}$
+			- Polinomis divisors estandarditzats:
+				- ![[Pasted image 20260312115324.png]]
 
 ## Protocols ARQ
 
+- La detecció d’errors permet al receptor diferenciar les trames correctes de les trames errònies.
+- Si el receptor descarta una trama, l’emissor haurà de tornar a enviar-la per evitar la pèrdua d’informació
+- .Per tal què l’emissor tingui coneixement de les trames que ha acceptat el receptor i les que s’han rebutjat per errors, s’empren trames de reconeixement, ACK (acknowledgment), i temporitzadors.
+- Aquests mecanismes s’anomenen sol·licitud de repetició automàtica, ARQ (Automatic Repeat reQuest)
 
-#### Finestra lliscant
+### Parada i espera
+- L’emissor envia una trama i espera el reconeixement de la trama per part del receptor. Alhora, inicialitza un temporitzador.
+- Si expira el temporitzador abans de rebre l’ACK, torna a transmetre la mateixa trama i inicialitza de nou el temporitzador.
+- Si es rep el reconeixement abans què expiri el temporitzador, transmet la següent trama i inicialitza el temporitzador.
+	- ![[Pasted image 20260312115909.png]]
+	  
+- Els errors poden afectar la trama de reconeixement (o aquest pot arribar després de finalitzar el temporitzador).
+- En aquest cas l’emissor tornaria a transmetre la trama.
+- El receptor acceptaria la trama com una nova trama quan en realitat es una còpia de l’anterior.
+	- ![[Pasted image 20260312120011.png]]
+	  
+- Per evitar aquesta situació s’empra un bit com a número de seqüència per etiquetar tant les trames con les confirmacions.
+- Si es deteriora la trama d’ACK i l’emissor torna a enviar la trama, el receptor detectarà que és una còpia i la descartarà (però tornarà a enviar el reconeixement de la trama).
+	- ![[Pasted image 20260312120138.png]]
+
+### Finestra lliscant
 - S'aprofita millor el canal
 - Evita l’espera d’un ACK per poder enviar una altra trama
 - Permet enviar un conjunt de trames sense tenir que esperar reconeixement de la trama n per enviar la trama n + 1
@@ -199,4 +257,35 @@ FALTEN APUNTS DIAPOS 83 A 94
 	- LFS (Last Frame Sent): Numero de seqüència de la última trama enviada
 - El transmissor ha de mantenir sempre que:
 	- LFS − LAR ≤ SWS
+- Per a cada trama emesa el transmissor desplaça a la dreta LFS i inicia un temporitzador.
+- Si el temporitzador finalitza i no s’ha rebut reconeixement es torna a enviar la trama.
+- Quan el transmissor rep un reconeixement desplaça a la dreta LAR el número de trames acceptades, permetent-li enviar noves trames.
+	- ![[Pasted image 20260312120255.png]]
+	  
+- En el receptor s’assignen també tres variables:
+	- RWS (Receiver Window Size): Quantitat màxima de trames fora de seqüència que es poden acceptar
+	- LAF (Largest Acceptable Frame): Numero de seqüència màxim d’una trama per acceptar-la
+	- LFA (Last Frame Acknowledged): Numero de seqüència del darrer ACK enviat
+	- En rebre una trama, el receptor efectua una de les dues accions següents:
+		- Si LFA < Num. Seq. ≤ LAF la trama es acceptada
+			- ![[Pasted image 20260312120551.png]]
+			  
+		- Altrament, rebutja la trama per estar fora del marc de la finestra
+		- ![[Pasted image 20260312120606.png]]
+		  
+### Número de seqüència
+- El número de seqüència de trama forma part de la capçalera de les trames.
+- La seva longitud es, per tant, limitada.
+- En superar el seu valor màxim torna a començar des de zero.
+- Aquesta situació pot presentar problemes en el receptor si no es tria una mida de la finestra adequada
+- Per evitar aquesta situació s’ha d’escollir:
+	- $RWS = SWS \le \frac{\text{(Num. Seq. Max} + 1)}{2}$
+	- ![[Pasted image 20260312121100.png]]
+
+### Rebuig de trames
+- Les temporitzacions afecten a l’eficiència en tenir que esperar un temps per tornar a enviar una trama rebuda amb errors.
+- Per millorar l’eficiència s’introdueixen trames de reconeixement negatiu NAK (Negative AcKnowledgment)
+- NAK l’envia el receptor per indicar el rebuig d’una trama. El transmissor reenviarà la trama rebutjada i les trames següents.
+	- ![[Pasted image 20260312121223.png]]
+
 
