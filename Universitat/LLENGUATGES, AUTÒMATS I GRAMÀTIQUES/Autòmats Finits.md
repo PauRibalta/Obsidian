@@ -15,3 +15,9 @@ Són màquines amb un número finit d’estats. $M = (Q, \Sigma, \delta, q_0, F)
 - Σ: alfabet d’entrada 
 - q0 ∈ Q: estat inicial 
 - F ⊆ Q: conjunt d’estats finals
+
+### Minimitzar autòmats:
+- Es poden simplificar els estats si:
+	- Dos estats son inicials
+	- Dos estats són finals
+	- No pots ajuntar-ne de finals i inicials

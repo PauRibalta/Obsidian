@@ -54,3 +54,63 @@ En ella influeix:
 - **El futur:** els nostres objectius immediats "filtren" les nostres percepcions de la realitat, optimitzant la tasca a realitzar.
 
 ### Principis de Gestalt
+
+Lleis de la percepció que expliquen com les persones tendeixen a organitzar els estímuls visuals en formes i patrons coherents. Ajuden a agrupar, estructurar i donar sentit a la informació de manera intuïtiva.
+
+Holística: tendència que tenim a veure les formes de manera agrupada i no de forma individual.
+
+- 1- Tancament: la ment completa figures incompletes per veure-les com a unitats.
+- 2- Proximitat: elements que estan junts tendeixen a percebre's com un grup.
+- 3- Continuïtat: les persones prefereixen percebre línies i formes contínues en lloc de fragments tallats.
+- 4- Similitud: objectes semblants (color, forma, mida) es perceben com relacionats.
+- 5- Figura i fons: la ment distingeix l'element principal (figura) del que és secundari (fons).
+
+L'estructura es percep mitjançant la simetria i l'ordre. La simetria dona sensació de solidesa i d'ordre que tendim a buscar.
+Les estructures també es perceben en moviment, no només de forma estàtica, els principis de gestalt actuen de forma conjunta al món real.
+
+##### L'estructura:
+Ens ajuda a entendre ràpidament objectius i conceptes. Ens serveix per poder memoritzar millor i centrar-nos en la informació rellevant.
+
+##### La lectura:
+El procés de llegir necessita un aprenentatge. No és un procés natural.
+
+### Memòria
+
+##### Sensorial:
+- S'emmagatzema durant un temps molt curt (mil·lisegons), és la informació provinent dels sentits
+- Memòria de la vista: memòria icònica
+- Memòria de la oïda: memòria ecòica
+
+##### Short Term Memory (STM)
+- Combinació de fenòmens derivats de la percepció i l'atenció. Memòria de curt termini, de treball o operativa
+- Baixa capacitat i alta volatilitat.
+- Només ens en podem en recordar de 3-4 coses a la vegada.
+- Menús auditius: sense interfície visual, només parlada amb opcions excloents que cal recordar.
+- Implicacions en el disseny: cal descriure bé el pas actual i com passar al pas següent. No has d'obligar a l'usuari a recordar
+- Fragmentació: divisió del text en unitats significatives i diferenciades
+
+##### Long Term Memory (LTM)
+- Magatzem de memòries, amb capacitat gairebé il·limitada durant llarg períodes de temps. Emmagatzema tot el nostre coneixement.
+- Alta capacitat
+- Accés lent
+- Pèrdua d'informació (oblit)
+- Es més propensa a cometre errors
+- Influïda per les emocions, no recordem els traumes per exemple
+- Lliure associativa
+- Modificar retroactivament
+- Fàcilment esbiaixable
+
+La STM disminueix amb l'edat, però la LTM augmenta
+És més fàcil reconèixer que recordar
+
+
+### Affordance
+
+Funció d'un objecte que l'observador percep directament a partir de la seva observació. Un objecte que no necessita instruccions per a ser utilitzat.
+- Han de tenir una captació intuïtiva
+- Una persona pot captar intuïtivament o no per a que serveix un objecte
+- Una cosa serà o no una affordance segons com les persones interactuïn amb ella
+- Efectivitat: forma funcional, visibilitat, acció coherent i relativitat
+
+##### Signifiers:
+- Pistes de funcionament de les coses. Exemples (soroll dels intermitents o soroll quan escrius una tecla al mòbil)
