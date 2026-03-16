@@ -11,7 +11,7 @@ $$
 	Calcular Retard Transmissió: $$
 R_t = \frac{\text{mida paquet}}{\text{V transmissió}} \; (\text{bit/s})
 $$
-	Calcular Retard Cues: $$
+	Calcular Retard Cues (no entra examen): $$
 R_c = (\text{paquets en cua}) \cdot R_{t\text{ paquet en cua promig}}
 $$
 $$
@@ -28,7 +28,9 @@ $$
 $$
 I = \frac{a \cdot L_n}{V_t}
 $$
+- RTT = (Rp+Rt+Rc) * 2
 - Cabal: Quantitat d’informació que es pot transferir per unitat de temps.
+- El producte retard propagació · capacitat (Vt) dona una idea de la **quantitat de bits que hi caben a la xarxa.**
 
 ![[Pasted image 20260205164022.png]]
 

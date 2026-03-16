@@ -114,3 +114,6 @@ Funció d'un objecte que l'observador percep directament a partir de la seva obs
 
 ##### Signifiers:
 - Pistes de funcionament de les coses. Exemples (soroll dels intermitents o soroll quan escrius una tecla al mòbil)
+
+##### Icones o etiquetes:
+Les etiquetes sempre guanyen a les icones, s'entenen millor. 

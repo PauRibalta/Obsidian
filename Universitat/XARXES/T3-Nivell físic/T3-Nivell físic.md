@@ -289,3 +289,4 @@ Forma part del control de l’enllaç¸ de dades i es imprescindible per a la co
 	- ![[Pasted image 20260312121223.png]]
 
 
+### Fórmules exercicis pràctica:
