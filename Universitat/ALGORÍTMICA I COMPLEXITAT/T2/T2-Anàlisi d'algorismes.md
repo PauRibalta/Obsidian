@@ -46,3 +46,55 @@ $$
 \Theta(g(n)) = \{ f(n) \mid \text{existeixen constants positives } c_1, c_2 \text{ i } n_0 \text{ tals que } 0 \le c_1 g(n) \le f(n) \le c_2 g(n) \text{ per a tot } n \ge n_0 \}
 $$
 ![[Pasted image 20260225115301.png]]
+
+
+### Notacions:
+S'agafen el millor i el pitjor cas possible, el cost dels dos casos està parametritzada per la mida de la instància, a la que direm n.
+- Millor cas: f(n)
+- Pitjor cas: g(n)
+Hem de tenir les cotes inferiors i superiors, per les quals ni el millor ni el pitjor cas creixeran més o menys que les cotes.
+- Cota superior u(n) -----> 𝑂-notation
+- Cota inferior l(n) -----> Ω-notation
+#### Quicksort
+- ##### Millor cas
+	- O(n log n)  
+	- Ω(n log n)  
+	- Θ(n log n)  
+- ##### Cas mitjà
+	- O(n log n)  
+	- Ω(n log n)  
+	- Θ(n log n)  
+- ##### Pitjor cas
+	- O(n²)  
+	- Ω(n²)  
+	- Θ(n²)  
+
+#### Mergesort  
+- ##### Millor cas  
+	- O(n log n)  
+	- Ω(n log n)  
+	- Θ(n log n)  
+- ##### Cas mitjà  
+	- O(n log n)  
+	- Ω(n log n)  
+	- Θ(n log n)  
+- ##### Pitjor cas  
+	- O(n log n)  
+	- Ω(n log n)  
+	- Θ(n log n)
+#### Insertion Sort  
+- ##### Millor cas  
+	- O(n)  
+	- Ω(n)  
+	- Θ(n)  
+- ##### Cas mitjà  
+	- O(n²)  
+	- Ω(n²)  
+	- Θ(n²)  
+- ##### Pitjor cas  
+	- O(n²)  
+	- Ω(n²)  
+	- Θ(n²)
+
+#### Escala d'infinits: 
+- 1<ln(n)<n<nlog(n)<n^2< n^2 log(n) < n^k < 2^n < n^k < n! <n^n
