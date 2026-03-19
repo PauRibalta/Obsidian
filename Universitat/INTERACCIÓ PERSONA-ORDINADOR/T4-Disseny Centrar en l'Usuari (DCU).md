@@ -1,9 +1,9 @@
 ### **Què és un DCU?** 
 Disseny de sistemes interactius pensant en els usuaris que el faran servir.
 
-	->Prototipus: Avaluats pels usuaris, donen feedback.
-	->Conèixer els usuaris.
-	->Què cal aconseguir? Una bona experiència a l'usuari (UX). No s'ha de donar més feina utilitzant la app.
+- ->Prototipus: Avaluats pels usuaris, donen feedback.
+- ->Conèixer els usuaris.
+- ->Què cal aconseguir? Una bona experiència a l'usuari (UX). No s'ha de donar més feina utilitzant la app de la que li treus quan l'utilitza.
 
 ### **Estàndard ISO 13407**
 És un marc guia per desenvolupar sistemes interactius centrats en l'usuari durant tot el cicle de desenvolupament. 
@@ -49,7 +49,7 @@ Passos de la guia:
 
 **Usuari**: Intervé en tot. És qui ho ha d'utilitzar, i són els afectats per la utilització. Hi ha 2 tipus d'usuaris, els **directes** i els **indirectes**.
 - Directes: Desenvolupadors + usuaris finals
-- Indirectes: Equips de manteniment, proveïdors de ...(?)
+- Indirectes: Equips de manteniment, proveïdors.
 
 **Fases d'enginyeria**
 1. Especificació
@@ -57,7 +57,7 @@ Passos de la guia:
 	- De l'activitat
 	- De la informació: Informació que es comunica entre l'usuari i la aplicació.
 		- Física: Paràmetres, colors
-		- Auditiva: 
+		- Auditiva: Sons, vibracions
 		- Consistència i coherència: Exemple: a la web no hi hauria d'haver més de 6 colors. 
 		- Affordance: Captació intuïtiva, coses que intuïtivament ja saps.
 3. Implementació
@@ -77,5 +77,6 @@ Passos de la guia:
 
 ### **Usabilitat**
 
-
 Pregunta d'examen: Diferencia entre experiència d'usuari i usabilitat?
+
+La usabilitat se centra en l'eficàcia, eficiència i satisfacció en assolir un objectiu, mentre que la UX és un concepte més ampli que inclou la percepció, les emocions i la relació psicològica de l'usuari amb el sistema.

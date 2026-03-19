@@ -12,6 +12,7 @@
 
 1. **Baixa fidelitat**
 	1. **Sketch:**
+		- Fet a mà.
 	
 	2. **Wireframe:** 
 		- Sketch + aplicació de disseny. 

@@ -20,6 +20,7 @@ Els nostres sistemes sensorials estan formats per els sensors (sentits) i els ac
 - **Vista:** captar el món a través de la llum que ens arriba als ulls.
 	- Sensació: captació de l'estímul físic i transformació en impuls nerviós.
 	- Percepció: assignació de significat a l'estímul captat.
+	- La sensació sempre va abans que la percepció.
 	- Sistema visual: sensible a les diferències de color i brillantor
 	- Limitacions sistema visual: 
 		- Pal·lidesa: els colors pastel son més complicats de distingir.
@@ -31,6 +32,7 @@ Els nostres sistemes sensorials estan formats per els sensors (sentits) i els ac
 		- Il·luminació ambiental
 		- Profunditat de color: bits dedicats a colors
 		- Espai de color: número de colors que es poden representar
+		- Freqüència: número de frames per segon.
 	- Interpretació dels colors: associem els colors a certs conceptes i emocions.
 	- Fovea vs perifèria: la fovea és la zona de la retina amb major resolució, és el focus d'atenció, on l'usuari està posant la seva atenció.
 		- Recomanacions: marcar els errors de forma clara i on es vegin de forma clara
@@ -116,4 +118,6 @@ Funció d'un objecte que l'observador percep directament a partir de la seva obs
 - Pistes de funcionament de les coses. Exemples (soroll dels intermitents o soroll quan escrius una tecla al mòbil)
 
 ##### Icones o etiquetes:
-Les etiquetes sempre guanyen a les icones, s'entenen millor. 
+- Les etiquetes sempre guanyen a les icones, s'entenen millor. 
+- Tot i estar segur de que la icona s'entén de manera clara és millor posar-hi també una etiqueta.
+- Per a que una icona sigui entesa, fa falta que hagi estat utilitzada durant molts anys i en diversos dispositius.
