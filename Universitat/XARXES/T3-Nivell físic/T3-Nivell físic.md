@@ -288,5 +288,3 @@ Forma part del control de l’enllaç¸ de dades i es imprescindible per a la co
 - NAK l’envia el receptor per indicar el rebuig d’una trama. El transmissor reenviarà la trama rebutjada i les trames següents.
 	- ![[Pasted image 20260312121223.png]]
 
-
-### Fórmules exercicis pràctica:
