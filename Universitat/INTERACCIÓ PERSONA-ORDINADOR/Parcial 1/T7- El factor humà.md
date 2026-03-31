@@ -4,7 +4,7 @@
 La psicologia de les persones influirà en com es relacionen amb els sistemes interactius i en la seva percepció de la UX.
 - 1: La gent té limitacions: no te'n recordes de tot.
 - 2: La gent fa errors, i el sistema ha de ser tolerant a aquests errors, s'han de poder desfer fàcilment.
-- 3: La memòria és complicada: apart de no en recordar-nos de tot, ens n'hem recordem de coses aleatòries.
+- 3: La memòria és complicada: apart de no en recordar-nos de tot, ens en recordem de coses aleatòries.
 - 4: La gent intenta fer servir tecnologies per comunicar-se, i aquesta tecnologia li ha de facilitar la comunicació.
 - 5: Atenció: la gent presta atenció al que vol.
 - 6: Processament inconscient: hi han processos que fem de manera inconscient, sense pensar-hi.
@@ -25,7 +25,7 @@ Els nostres sistemes sensorials estan formats per els sensors (sentits) i els ac
 	- Limitacions sistema visual: 
 		- Pal·lidesa: els colors pastel son més complicats de distingir.
 		- Mida àrea de color: com més gran és més distingeixes el color
-		- Separació: si dos colors semblants, però no iguals, estan junts veuràs amb més facilitat que són diferents que si estan separats.
+		- Separació: dos colors semblants, però no iguals, si estan junts veuràs amb més facilitat que són diferents que si estan separats.
 		- Color-blindness: persones que són cegues a certs colors, protanopia (absència a colors vermells), deuteranopia (absència a colors verds), tritanopia (absència a colors blaus) i monocromatisme (només distingeixes entre tons de grisos).
 	- Factors externs: factors que afecten a la visualització però el dissenyador no pot alterar.
 		- Angle de visualització
@@ -92,7 +92,7 @@ El procés de llegir necessita un aprenentatge. No és un procés natural.
 - Fragmentació: divisió del text en unitats significatives i diferenciades
 
 ##### Long Term Memory (LTM)
-- Magatzem de memòries, amb capacitat gairebé il·limitada durant llarg períodes de temps. Emmagatzema tot el nostre coneixement.
+- Magatzem de memòries, amb capacitat gairebé il·limitada durant llargs períodes de temps. Emmagatzema tot el nostre coneixement.
 - Alta capacitat
 - Accés lent
 - Pèrdua d'informació (oblit)

@@ -49,7 +49,7 @@ Passos de la guia:
 
 **Usuari**: Intervé en tot. És qui ho ha d'utilitzar, i són els afectats per la utilització. Hi ha 2 tipus d'usuaris, els **directes** i els **indirectes**.
 - Directes: Desenvolupadors + usuaris finals
-- Indirectes: Equips de manteniment, proveïdors.
+- Indirectes: Equips de manteniment, proveïdors, entre d'altres.
 
 **Fases d'enginyeria**
 1. Especificació
@@ -80,3 +80,5 @@ Passos de la guia:
 Pregunta d'examen: Diferencia entre experiència d'usuari i usabilitat?
 
 La usabilitat se centra en l'eficàcia, eficiència i satisfacció en assolir un objectiu, mentre que la UX és un concepte més ampli que inclou la percepció, les emocions i la relació psicològica de l'usuari amb el sistema.
+Usabilitat: com de fàcil es fer el que vull en aquell sistema.
+UX: com l'usuari interactua amb el sistema

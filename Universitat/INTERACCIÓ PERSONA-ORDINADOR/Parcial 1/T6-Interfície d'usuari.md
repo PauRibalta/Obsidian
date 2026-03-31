@@ -15,7 +15,7 @@
 	- Adaptative design: Mostra un disseny o un altre en funció de la pantalla on es mostri. Té unes quantes mides fixes i quan la pantalla és suficientment gran o petita canvia de mida.
 	- Responsive design : Els elements s'adapten a la mida de la pantalla 
 - **Ús del color:**
-	- Han de servir per guiar l'atenció, comunicar informació i mantenir la coherència, la usabilitat i l'accessibilitat de la interfície. Has de combinar els colors correctament tenint en compte la teoria del color. S'han de tenir en compte que la gent pot tenir dificultats per interpretar els colors.
+	- Han de servir per guiar l'atenció, comunicar informació i mantenir la coherència, la usabilitat i l'accessibilitat de la interfície. Has de combinar els colors correctament tenint en compte la teoria del color. S'han de tenir en compte que la gent pot tenir dificultats per interpretar els colors. A més certs colors s'associen a coses.
 - **Tipografia:**
 	- Ús de la lletra en una interfície per garantir la llegibilitat, establir jerarquia visual (títols, subtítols, text, ...) i transmetre el to i la personalitat del disseny, mantenint la coherència i l'accessibilitat. El missatge s'ha de poder llegir de forma clara
 	- Errors a evitar: interlineat baix, tipografia mal escollida, pocs caràcters per línia, espaiat entre caràcters
@@ -28,8 +28,8 @@
 	- Model o patró que serveix de referència en una determinada àrea. És en temps real i dona un cert sentiment d'immersió.
 - **Estils d'interacció:**
 	- Sèrie de funcionalitats agrupades que es mostren a l'usuari en conjunt, per tal de que pugui introduir informació al sistema i en pugui obtenir una resposta. Per exemple els menús, formularis, ...
-	- Llenguatge de comandes: llenguatges formals amb sintaxis, cada ordre s'executa a l'instant , ja que es solen interpretar en lloc de compilar.
-	- Menús d'opcions: l'usuari es pot moure per ells i triar l'opció que vol, no requereix que l'usuari memoritzi. Pot incorporar dreceres i és adequat per a tot tipus d'usuaris.
-	- Formularis: la gent sap que ha de fer perquè són iguals que els de paper, també hi ha un apartat d'ajuda en cada camp. Els camps han d'estar identats i ordenats, és adequat per a tot tipus d'usuaris.
-	- Manipulació directa: ensenyes a l'usuari un model visual del que pot fer.
+		- Llenguatge de comandes: llenguatges formals amb sintaxis, cada ordre s'executa a l'instant , ja que es solen interpretar en lloc de compilar.
+		- Menús d'opcions: l'usuari es pot moure per ells i triar l'opció que vol, no requereix que l'usuari memoritzi. Pot incorporar dreceres i és adequat per a tot tipus d'usuaris.
+		- Formularis: la gent sap que ha de fer perquè són iguals que els de paper, també hi ha un apartat d'ajuda en cada camp. Els camps han d'estar identats i ordenats, és adequat per a tot tipus d'usuaris.
+		- Manipulació directa: ensenyes a l'usuari un model visual del que pot fer.
 	
