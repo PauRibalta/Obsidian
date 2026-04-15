@@ -61,7 +61,23 @@ Situacions que es produeixen en l’execució segmentada que impedeixen que s’
 			• WAW (Write after Write). La instrucció j escriu un operand abans que sigui escrit per i.
 		
 	
-• De control (o d’instruccions). Provocats per les instruccions de salt i altres que modifiquen el registre PC.
+• De control (o d’instruccions): Provocats per les instruccions de salt i altres que modifiquen el registre PC
+	- Salts incondicionals: Causen una aturada del pipeline (penalització de salt)
+			- ![[Pasted image 20260415174459.png]]
+		- La penalització de salt és més gran quan el pipeline té més etapes. Aquesta penalització es pot reduïr quan l’adreça de salt es calcula a l’etapa de decodificació.
+			- ![[Pasted image 20260415174545.png]]
+			- Tècnica de prefetching: Utilització d’unitats específiques per a la captació d’instruccions abans que siguin necessàries i les situen en una cua.
+				- ![[Pasted image 20260415174815.png]]
+	- Salts condicionals: La decisió de saltar no es pot prendre fins que s’acaba l’execució de la instrucció
+		- Salt retardat: reordenació de les instruccions per incloure en el forat de salt una instrucció útil.
+			- ![[Pasted image 20260415174933.png]]
+		- Predicció de salt: predir el salt com no efectiu. Es continuen captan instruccions per ordre. Es fa una execució especulativa de les instruccions fins que es pot comprovar que s’han estat executant les correctes.
+			- ![[Pasted image 20260415175430.png]]
+		- Predicció dinàmica:
+			- ![[Pasted image 20260415175542.png]]
+			- Si ens equivoquem a l'hora de predir si saltarà o no perdem la instrucció.
+	
+	
 
 **Implicacions en el rendiment:**
 	$\text{Acceleració del pipeline} = \frac{t_{\text{mig instr. sense segmentació}}}{t_{\text{mig instr. amb segmentació}}} = \frac{\text{CPI ideal} \cdot \text{profunditat de segmentació}}{\text{CPI ideal} + \text{cicles de detenció}}$ 
