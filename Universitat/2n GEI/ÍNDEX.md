@@ -1,0 +1,5 @@
+1. [[Algorítmica i Complexitat]]
+2. [[Arquitectura de Computadors]]
+3. [[Interacció Persona-Ordinador]]
+4. [[Llenguatges, autòmats i gramàtiques]]
+5. [[Xarxes]]
