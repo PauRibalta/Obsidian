@@ -1,0 +1,195 @@
+## 1. Conceptes bàsics
+#### Que és:
+Part bàsica del DCU que de les expectatives dels usuaris d’un sistema interactiu i com s’adapta a les seves necessitats, característiques, context social, físic o organitzatiu. Captar les expectatives dels usuaris d'un sistema i mirar com s'adapta a ells.
+
+#### Participants:
+- **Amb usuaris:** 
+	- Persones o organitzacions afectades pel sistema.
+	- Intervenció directa d’usuaris representatius
+	- Implicació dels usuaris: Positiu
+	- Dificultat de reclutament: Negatiu
+	-  Influencia directa i indirecta amb el sistema​
+	- Generalment, no participen tots els usuaris, només uns quants “escollits”
+- **Sense usuaris:**
+	- Només experts avaluadors
+	- Seguiment de les activitats d’us dels usuaris
+	- Ràpid de fer: Positiu
+	- No retroalimentació dels usuaris: Negatiu
+	- Amb ajuda de guions i pautes
+
+#### Automatització:
+- **Automàtics:**
+	- Remotament, a través de la xarxa
+	- Eficients, ràpids, parametrització equivalent, sense subjectivitat
+	- Només es poden fer amb sistemes finalitzats, no amb prototipus
+	- **Resultats quantitatius**
+- **Manuals:**
+	- Consumeixen més recursos (temps, persones avaluadores, etc.)
+	- Poden avaluar aspectes mes subjectius que els automàtics
+	- Es poden realitzar en qualsevol etapa del desenvolupament, inclús, amb prototipus
+	- **Resultats qualitatius**
+
+#### Localització:
+- **Laboratori (d’usabilitat):**
+	- Ho fa l’avaluador, sense ajuda del usuaris
+	- Es fa a un laboratori preparat per a l’anàlisi d’usabilitat.
+	- Es pot portar usuaris per a estudis específics
+	- **Entorn controlat**
+- **Entorn (in situ):**
+	- Ho fa tant l’avaluador com els usuaris
+	- Es fa al lloc d’utilització del sistema a avaluar
+	- **Entorn no controlat totalment**
+
+## 2. Mètodes d’avaluació de la usabilitat
+
+- #### Mètodes per INSPECCIÓ:
+	- Avaluadors (experts)
+	- Per inspecció o examen de la UI
+	- Sense intervenció directa dels usuaris (generalment)
+	  
+	- ##### Avaluació heurística:
+		- **Objectiu:** Mesurar la qualitat de la UI en relació a la seva facilitat per se apresa i utilitzada
+		- **Llista de principis establerta:**
+			- La llista s’ha d’adaptar de forma individual per a cada nou anàlisi
+			- Els experts avaluen tots els punts de la llista
+			- Nombre d’experts: de 3 a 5
+			- Cal assegurar que les avaluacions siguin independents i imparcials
+			- Hi ha diferents llistes de regles heurístiques
+			- Una de les més utilitzades son els principis heurístics de Jackob Nielsen
+		- **Metodologia:**
+			- Preparació: Determinació dels criteris i selecció d’avaluadors
+			- Avaluació: Revisió individual de la UI. Comunicació i resum de resultats
+			- Síntesi final: Anàlisi de resultats
+		- **Regles heurístiques de Nielsen:**
+			- **Visibilitat de l'estat del sistema:**
+				- **Sempre informació del que està passant:** Pre-carregadors, barres de progrés, número de passos en un procés i pas en el que es troba el procés, etc...​
+				- **Feedback informatiu:**
+					- Finalització correcta
+					- Finalització incorrecta
+					- Procés de l’acció
+			- **Coincidència entre el sistema i el món real**
+				- La redacció de tots els textos i missatges del sistema ha de ser en el llenguatge i la terminologia que entengui l’usuari. Informació en ordre natural i lògic.​
+			- **Control de l'usuari i llibertat dintre dels límits**
+				- L’usuari te el control de la interacció. És l’usuari el que decideix que fer, no el sistema el que li mana a l’usuari (menys en casos com els “assistents”) Mesures de correcció de errors (CTRL+Z) -----> L’usuari se sent lliure per investigar el sistema.
+			- **Consistència amb els estàndards**
+				- Seguir els estàndards i les convencions establertes. COMPTE! A diferents cultures, les convencions no tenen per que ser les mateixes! (Colors al Japó).
+					- Consistència en els formats: Els missatges d’informació i/o error, els menús d’opcions, els colors de l’aplicació, sempre haurien de tenir el mateix format.
+					- Consistència en les accions: A una mateixa tasca, li correspon una única seqüència d’accions. Si per canviar de camp es fa servir TAB, no es pot fer servir INTRO per canviar de camp a una altre part de l’aplicació.
+			- **Millor reconèixer abans que recordar**
+				- Utilitzar icones fàcilment reconeixibles que facin la funció que s’espera d’ells. Instruccions clares.
+				- L’usuari no ha de recordar una dada que ja ha introduït prèviament. El sistema li ha d’oferir informació per que l’usuari pugui triar.
+			- **Prevenció d'errors**
+				- El disseny del sistema ha de minimitzar possibles errors de l’usuari, com per exemple, missatges de confirmació abans d’operacions destructives. Si es produeix un error, s’ha de donar un missatge clar, indicant la possible causa de l’error i la possible solució
+			- **Flexibilitat i eficiència d'ús**
+				- Adaptabilitat del sistema al coneixement que els usuaris tenen del propi sistema
+					- **Usuaris principiants:**
+						- No han usat mai el sistema o poques vegades. (Molt feedback informatiu, ajut continu i recordar poc)
+					- **Usuaris intermitents:**
+						- Han fet servir el sistema de forma intermitent i poden recordar conceptes bàsics, però no detalls. (Reconèixer més que recordar, Ajut limitat amb grau seleccionable)
+					- **Usuaris freqüents:**
+						- Completament familiaritzats amb el sistema i la UI (Baix temps de resposta, feedback i ajuda limitada, us de dreceres)
+				- **DRECERES:** 
+					- Combinacions de tecles, clics de ratolí, instruccions d’un llenguatge, destinats a fet una tasca més ràpid de lo habitual
+			- **Estètica i disseny minimalista**
+				- “Tot el que no suma, resta” Cal evitar informació irrellevant o poc usada. Cal tenir cura de l’ús del color i les animacions -----> Consistència!
+			- **Ajudar als usuaris amb els errors**
+				- Te molta relació amb “Prevenció d’errades”. Cal fer evident si un missatge és o no d’error. Si és d’error, cal indicar la causa i una possible solució.
+			- **Ajuda i documentació**
+				- Encara que la IU sigui “intuïtiva”, no tots els usuaris tenen les mateixes habilitats. Sempre cal oferir ajuda, que sigui fàcil de trobar, ben estructurada i no massa extensa.
+		- **Personalització dels principis:**
+			- Deniese Pierotti va ampliar els principis de Nielsen amb 3 nous punts i subheurístics
+				- Habilitats: Estendre i suplementar els coneixements i incentivar les habilitats, i experiència dels usuaris
+				- Interacció plaent i respectuosa: Afavorir la qualitat de vida, tractar amb respecte, amb un disseny estètic, amb valors artístics (poder triar la tipografia per exemple) i funcionals
+				- Privacitat: Cal protegir la informació personal dels usuaris i els seus clients
+			- (Subheurístics: preguntes que ajuden a definir un heurístic)
+		- **Revisió:**
+			- Els criteris s’agrupen semànticament (per significat), segon els criteris heurístics de la llista utilitzada (Criteris de Nielsen, per exemple)
+			- Cada subheurístic te una resposta i comentaris aclaridors de l’avaluador
+			- Es fa una síntesi i una anàlisi de totes les valoracions els subheurístics
+		- **Avantatges i inconvenients:**
+			- **Avantatges:**
+				- Econòmic
+				- Intuïtiu i motivador
+				- Poca planificació prèvia
+				- Utilitzable en etapes primerenques
+				- Ho poden fer avaluadors “inexperts”
+			- **Inconvenients:**
+				- Calen varis avaluadors
+				- Difícil en UI complexes
+				- Subjectivitat dels avaluadors
+				- No hi ha usuaris reals, sinó avaluadors
+				- Dificultat de trobar avaluadors experts
+	- ##### Recorreguts Cognitius:
+		- **Objectiu:** Mesurar la facilitat d’aprenentatge de la interfície
+		- **Simulació pas a pas:**
+			- Simula pas a pas el que faria un usuari per completar una tasca
+			- Avalua si el sistema facilita la tasca
+			- Es basa en escenaris d’us
+			- Es centra en la presa de decisions de l’usuari
+		- **Metodologia:**
+			- **1. Definició del perfil:** Coneixements previs, objectius, context d’us
+			- **2. Definició de tasques:** Tasques reals a fer per l’usuari en el sistema
+			- **3. Descomposició de tasques:** Seqüència d’accions necessàries per fer la tasca
+			- **4. Avaluació de cada pas:** Respondre a 4 preguntes clau
+			- **5. Documentació dels resultats:** Descripció de les respostes del sistema i notes pròpies
+		- **Les 4 preguntes d’avaluació:**
+			- **1. Les accions disponibles son adequades a l’usuari?** L’usuari entén les accions disponibles? Entén el que ha de fer?
+			- **2. L’usuari trobarà l’acció correcta?** Sap quin element de la UI utilitzar per fer l’acció? El troba a la UI?
+			- **3. L’usuari associarà l’acció amb resultat esperat?** Entén que aquell element de la interfície realitzarà l’acció que vol fer?
+			- **4. Rebrà feedback adequat després de fer l’acció?** L’usuari sabrà el resultat de l’acció i entendrà el missatge del sistema?
+		- **Avantatges i inconvenients:**
+			- **Avantatges:**
+				- Detecta problemes de facilitat d’aprenentatge
+				- Aplicable a prototipus de baixa i alta fidelitat
+				- Estructurat i sistemàtic
+			- **Inconvenients:**
+				- Depèn molt de les suposicions sobre les habilitats de l’usuari
+				- No detecta problemes d’eficiència o satisfacció de l’usuari
+				- Pot arribar a ser lent tant de preparar com d’avaluar
+	- ##### Recorreguts d’usabilitat plural:
+		- **Objectiu:** Mesurar la facilitat d’aprenentatge de la interfície
+		- **Evolució / modificació dels recorreguts cognitius:**
+			- És un recorregut cognitiu, però amb participació d’usuaris, dissenyadors i experts en usabilitat
+			- Tots els participants assumeixen el rol d’usuari del sistema
+			- Anàlisis individual del sistema, amb recorregut cognitiu
+			- Al final, es fa un debat sobre el punt de vista de cadascun dels participants.
+		- **Metodologia:**
+			- La mateixa que en recorreguts cognitius, afegint una última fase de debat
+		- **Avantatges i inconvenients:**
+			- **Avantatges:**
+				- Integra la visió d’usuaris reals
+				- Detecció de problemes propis d’usuari
+				- Genera consens i aprenentatge mutu
+			- **Inconvenients:**
+				- És més lent que altres mètodes
+				- Pot haver dominància d’alguns participants
+				- Cal un moderador per al debat final
+	- ##### Revisió d'Estàndards:
+		- **Objectiu:** Mesurar el grau d’acompliment d’un cert estàndard
+		- **Comprovació de si es compleix un cert estàndard:**
+			- Ho realitza un expert en l’estàndard
+			- Estàndards “de facto” o “de iure”:
+				- De iure (estàndards de llei):
+					- ISO 9241 (Usabilitat) 
+					- W3C (Accessibilitat – WCAG)
+				- De facto (regles no escrites però que tothom ha adoptat):
+					- Guies de disseny (Material Design, Apple HIG, et.)
+		- **Metodologia:**
+			- Inspecció minuciosa de la interfície per comprovar el grau d’acompliment de l'estàndard
+		- **Avantatges i inconvenients:**
+			- Avantatges:
+				- És objectiu i sistemàtic
+				- És fàcil de replicar
+				- No calen usuaris
+			- Inconvenients:
+				- Cal trobar experts en l’estàndard
+				- No detecta problemes reals d’us
+				- Depèn de la qualitat de l’estàndard
+- #### Mètodes per INDAGACIÓ:
+	- Avaluadors (experts)
+	- Usuaris treballant in situ
+	- Observació del treball → Entendre el sistema
+- #### Mètodes per TEST:
+	- Intervenen només alguns usuaris (la quantitat varia segons es vulgui)
+	- Els avaluadors analitzen els resultats
+	- Els avaluadors fan de “guia” als usuaris

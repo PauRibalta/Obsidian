@@ -2,5 +2,6 @@
 [[T5-Prototipat]]
 [[T6-Interfície d'usuari]]
 [[T7- El factor humà]]
+[[T8- Avaluació de la Usabilitat]]
 
 Web amb recursos de la matèria https://curso-ipo.com/
