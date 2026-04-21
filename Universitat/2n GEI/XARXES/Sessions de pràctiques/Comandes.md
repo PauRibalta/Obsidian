@@ -103,3 +103,22 @@ apt update
 hping3 --help
 
 - Diferència amb ping? Te més opcions, configuracions. hping3 és més avançat que ping
+
+
+## Resum comandes 20-4-2026
+
+- ssh user@ip → connectar-te a un host remot
+- whoami → veure usuari actual
+- hostname → nom de la màquina
+- ip a / ifconfig → veure IPs i interfícies
+- ip link → info de la interfície i MAC
+- ping ip → comprovar connectivitat i latència
+- tcpdump -i eth0 icmp → veure trànsit ICMP (ping) en temps real
+- ip link set eth0 down/up → desactivar/activar xarxa
+- arp -a → veure taula ARP (IP ⇔ MAC)
+- ip neigh flush all → buidar ARP
+- ip addr add IP/mask dev eth0 → afegir IP a una interfície
+- ip route → veure rutes
+- ip route add default via IP → definir porta d’enllaç (internet)
+- apt update → actualitzar repositoris
+- hping3 → enviar paquets personalitzats (més avançat que ping)
