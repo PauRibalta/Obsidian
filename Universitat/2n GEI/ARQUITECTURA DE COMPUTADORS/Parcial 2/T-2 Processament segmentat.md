@@ -81,3 +81,36 @@ Situacions que es produeixen en l’execució segmentada que impedeixen que s’
 
 **Implicacions en el rendiment:**
 	$\text{Acceleració del pipeline} = \frac{t_{\text{mig instr. sense segmentació}}}{t_{\text{mig instr. amb segmentació}}} = \frac{\text{CPI ideal} \cdot \text{profunditat de segmentació}}{\text{CPI ideal} + \text{cicles de detenció}}$ 
+
+
+### Processament superescalar
+
+- Inclusió de diverses unitats funcionals en el processador per treballar amb més d’una instrucció en paral·lel a cada etapa. 
+- S’inicia l’execució de diverses instruccions en el mateix cicle de rellotge.
+- L’efecte dels possibles riscos de la segmentació és més acusat.
+	-  ![[Pasted image 20260422172139.png]]
+- Flux d’execució d’instruccions suposant que la unitat de punt flotant utilitza tres cicles i la unitat de sencers un cicle.
+- Si s’assumeix que no existeixen riscos les instruccions acabarien d’aquesta manera.
+	- ![[Pasted image 20260422172530.png]]
+
+#### Execució desordenada
+- L’escriptura de resultats en un ordre distint en el que apareixen a les instruccions pot causar problemes (ex: en les situacions d’excepció)
+- Escriptura retardada. Les unitats retarden l’escriptura de resultats perquè es faci en el mateix ordre d’aparició que a les instruccions.
+	- ![[Pasted image 20260422172654.png]]
+
+#### Ús de registres temporal
+- Permet que les unitats funcionals es puguin utilitzar tan aviat com sigui possible, fent una escriptura de resultats en ordre
+- El contingut dels registres temporals es transfereix als registres permanents en l’ordre correcte segons el programa.
+	- ![[Pasted image 20260422173002.png]]
+
+
+#### Rendiment de les instruccions: nombre d’instruccions executades per segon (P).
+
+R = freqüència de rellotge. 
+S = nombre mig de cicles de rellotge per llegir i executar una instrucció.
+
+• En una execució seqüencial: P = R/S 
+• En una execució pipeline en condicions ideals: S=1. Per tant: P = R 
+• Considerant els efectes dels riscos del pipeline: P=R/T
+- on Tl és el temps entre l’execució de dues instruccions consecutives.
+- Tl = (1+δ) on δ és l’increment degut a l’efecte dels riscos del pipeline.
