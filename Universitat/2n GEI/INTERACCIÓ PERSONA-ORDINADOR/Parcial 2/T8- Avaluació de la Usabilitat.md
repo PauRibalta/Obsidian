@@ -189,7 +189,181 @@ Part bàsica del DCU que de les expectatives dels usuaris d’un sistema interac
 	- Avaluadors (experts)
 	- Usuaris treballant in situ
 	- Observació del treball → Entendre el sistema
+	  
+	- ##### Observació de camp:
+		- **Objectiu:** Observar la forma de treballar dels usuaris reals
+		- Observar usuaris reals en el seu entorn de treball
+		- No es basa en normes ni simuladors
+		- Ho fa un avaluador mentre els usuaris utilitzen el sistema en el seu context real, fent tasques reals.
+		- **Metodologia:**
+			- Definició d’objectius a estudiar
+			- Selecció d’usuaris, context i tasques
+			- Observació passiva o activa (amb enregistrament)
+			- Anàlisi de resultats i elaboració de conclusions
+		- **Avantategs i inconvenients:**
+			- Avantatges:
+				- És un mètode molt realista
+				- Detecta problemes inesperats
+				- Te en compte el context d’us
+				- Molta informació qualitativa
+			- Inconvenients:
+				- Costós en temps
+				- Biaix de l’observador
+				- Efecte Hawthorne: Els usuaris canvien el seu comportament quan es senten observats
+				  
+	- ##### Focus grup:
+		- **Objectiu:** Afavorir el diàleg i captar reaccions espontànies i idees que evolucionen
+		- **Discussió dirigida:**
+			- Entre 6 i 9 usuaris fa servir un sistema
+			- Després, es reuneixen per a discutir els aspectes relacionats amb el sistema
+			- Un moderador modera i facilita la discussió
+		- **Metodologia:**
+			- Selecció de participants (de 6 a 9 de perfils similars)
+			- Preparació de preguntes guia
+			- Conducció de la sessió de discussió
+			- Enregistrament de la sessió
+			- Anàlisis de resultats
+		- **Avantatges i inconvenients:**
+			- Avantatges:
+				- Aporta molta informació qualitativa 
+				- Genera noves idees 
+				- Capta percepcions i emocions dels usuaris 
+				- Relativament ràpid de fer
+			- Inconvenients:
+				- No reflecteix el comportament real 
+				- Alguns usuaris poden influencia a altres 
+				- Resultats menys objectius que en altres mètodes
+				  
+	- ##### Tècniques d’interrogació:
+		- **Objectiu:** Obtenir la informació directament de l’usuari
+		- **Si no saps, pregunta**
+			- Els usuaris responen a preguntes de l’avaluador referents a la utilització del sistema
+			- Les preguntes es poden fer a través d’entrevistes o qüestionaris
+		- **Metodologia:**
+			- Selecció de la tècnica d’interrogació: Entrevista o Qüestionari. 
+			- Disseny de les preguntes (obertes o tancades), amb claredat i neutralitat 
+			- Recollir dades presencialment o virtualment (Google formularis, per exemple) 
+			- Anàlisi i elaboració de conclusions
+		- **Entrevistes:**
+			- Permet recollir informació directa i estructuradament 
+			- Preguntes adaptables al context i als usuaris 
+			- Van de lo general a lo específic (en l’ús de la UI) 
+			- Avaluació a nivell global 
+			- Poden detectar problemes no previstos 
+			- S’han de preparar amb antelació i es poden adaptar les preguntes durant l’entrevista
+		- **Qüestionaris:**
+			- Menys flexibles que les entrevistes 
+			- Es pot fer a més usuaris 
+			- Pre-test, Post-tasca i Post-test
+				- Pre-test= què esperes de l'aplicació abans de fer-la servir, molt general. 
+				- Post-tasca = una vegada has fet la tasca què t'han semblat diferents aspectes d'aquesta amb un qüestionari, molt específic. 
+				- Post-test = test després d'haver fet servir l'aplicació, temes generals de l'aplicació
+			- Tipus diferents de preguntes (General o obertes)
+				- Obertes: l'usuari respon amb un text
+				- Tancades: l'usuari escull una opció entre unes quantes. 
+					- Opcions disjuntes: només pots marcar una opció
+					- Vàries opcions: en pots seleccionar més d'una
+					- Triar d'una llista.
+			- Pot ser necessària una conversió qualitoquantitativa per poder aplicar mètodes estadístics d’anàlisi → Categorització i ponderació de respostes qualitatives 
+			- Escala de Likert: Escala numèrica amb un valor central. 
+				- Ex: Molt dolent, dolent, neutre, bo, molt bo
+		- **Avantatges i inconvenients:**
+			- Avantatges:
+				- Fàcil d’explicar 
+				- Es pot arribar a un gran nombre d’usuaris 
+				- S’obtenen dades quantitatives i qualitatives 
+				- Econòmic i relativament ràpid de fer, en el cas dels questionaris
+			- Inconvenients:
+				- L’usuari es pot veure intimidat, sobre tot en entrevistes 
+				- Depèn molt del que recorda l’usuari 
+				- Pot haver respostes poc sinceres si l’entrevista o el qüestionari es fa ràpid o sense seriositat 
+				- No reflecteix el comportament real del sistema
+				  
 - #### Mètodes per TEST:
 	- Intervenen només alguns usuaris (la quantitat varia segons es vulgui)
 	- Els avaluadors analitzen els resultats
 	- Els avaluadors fan de “guia” als usuaris
+	  
+	- ##### Thinking Aloud
+		- **Objectiu:** Captar les impressions de l’usuari en fer servir el sistema
+		- **Pensar en veu alta:**
+			- Els usuaris expressen en veu alta els seus pensaments i opinions mentre interaccionen amb el sistema
+			- L’avaluador escolta, observa i pren notes (s'avalua al sistema, no a l'usuari)
+		- **Metodologia:**
+			- Selecció de participants (de 6 a 9 de perfils similars) 
+			- L’avaluador dona instruccions clares a l’usuari: “Digues en veu alta el que vagis pensant” 
+			- Es fa la interacció de l’usuari amb el sistema 
+			- Enregistrament de la sessió 
+			- Anàlisis de resultats
+		- **Avantatges i inconvenients:**
+			- Avantatges:
+				- Dona molta informació qualitativa 
+				- Detecta problemes de comprensió i de decisió dels usuaris 
+				- Relativament fàcil d’entendre i d’aplicar
+			- Inconvenients:
+				- L’usuari es pot veure intimidat i no comportar-se de forma natural 
+				- Depèn molt de l’usuari 
+				- L’avaluador ha de tenir “ma esquerra "i experiència.
+				  
+	- ##### Interacció Constructiva:
+		- **Pensar en veu alta, per parelles:**
+			- És una derivada de Thinking Aloud 
+			- Són dos els usuaris que fan servir el sistema i parlen 
+			- L’avaluador escolta, observa i pren notes
+		- Mateixa metodologia que el thinking aloud
+		- **Avantatges i inconvenients:**
+			- Avantatges:
+				- És més natural per a l’usuari parlar amb una altre persona que no parlar ell sol
+			- Inconvenients:
+				- Pot haver discrepàncies entre els dos usuaris
+				  
+	- ##### Mètode del conductor:
+		- **L’avaluador condueix:**
+			- És una derivada de Thinking Aloud 
+			- L’avaluador guia a l’usuari quan veu dificultats 
+			- Objectiu, descobrir necessitats d’informació dels usuaris
+		- Mateixa metodologia que el thinking aloud, però l'avaluador intervé
+		- **Avantatges i inconvenients:**
+			- Avantatges: L’usuari es sent més acompanyat i menys perdut a la interfície
+			- Inconvenients: Si l’avaluador intervé massa, es perd l’objectiu del mètode
+			  
+	- ##### Card Sorting:
+		- **Objectiu:** Conèixer com els usuaris visualitzen l’organització de la informació
+		- **Ordenació física de targetes:**
+			- Els usuaris organitzen els continguts en grups, mitjançant targetes físiques 
+			- Els usuaris reben targetes (card) amb diferents opcions de menú o funcionalitats 
+			- Les agrupen segons el seu criteri 
+			- Hi ha targetes en blanc per suggerencies
+		- **Metodologia:**
+			- Definició del contingut de les targetes i preparació 
+			- Escollir “obert” (amb targetes en blanc) o “tancat” (sense targetes en blanc) 
+			- Els usuaris fan l’ordenació i agrupació explicant el seu criteri 
+			- Registre de resultats i anàlisi de patrons d’agrupació
+		- **Avantatges i inconvenients:**
+			- Avantatges:
+				- Molt útil per a disseny de menús i navegació 
+				- Centrat clarament en l’usuari 
+				- Fàcil d’aplicar amb resultats clars
+			- Inconvenients:
+				- No es pot avaluar la interacció 
+				- Pot haver desacords entre els usuaris
+
+#### Laboratori d'usabilitat:
+- Espai dissenyat per avaluar la usabilitat de sistemes 
+- Permet registrar i analitzar les dades obtingudes
+
+##### Estructura:
+- Dues sales: 
+	- Sala de proves: per als usuaris que fan servir el sistema 
+	- Sala d’observació: per als avaluadors 
+- Estan separades per un mirall unidireccional
+##### Recursos
+- Instal·lacions adequades per a un entorn controlat i còmode 
+- Software d’avaluació especialitzat (no substitueix als experts) 
+- Personal format
+
+## Conclusions
+- No serveix de res dissenyar i implementar la interacció amb usuari si no es pot avaluar la seva usabilitat 
+- L’objectiu es identificar i rectificar problemes d’usabilitat en el disseny 
+- Es pot fer en laboratori, o al lloc de treball del client 
+- La participació de l’usuari és, en molts casos, imprescindible
