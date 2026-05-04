@@ -2,6 +2,8 @@
 Per entrar:
 **ssh prg17@187.33.151.15**
 Contrasenya: prg17
+
+# Sessió 1
 ## Repte 0
 
 whoami
@@ -122,3 +124,45 @@ hping3 --help
 - ip route add default via IP → definir porta d’enllaç (internet)
 - apt update → actualitzar repositoris
 - hping3 → enviar paquets personalitzats (més avançat que ping)
+
+# Sessió 2
+
+### 1. Comandes de Configuració i Informació de Xarxa
+
+- **ip route**: Serveix per veure i gestionar la taula d'encaminament (routing) del sistema. S'utilitza per saber quina és la ruta per defecte (_default gateway_) i si l'equip pot sortir a altres xarxes o a Internet.
+    
+- **ip route add default via IP*: Permet configurar la porta d'enllaç per defecte. Sense aquesta configuració, l'equip només es pot comunicar amb la seva xarxa local.
+    
+- **netstat -tan**: Mostra l'estat de les connexions TCP. S'utilitza per veure quines connexions estan establertes (`ESTABLISHED`), quines estan esperant a tancar-se (`TIME_WAIT`) i els ports locals i remots implicats.
+    
+
+### 2. Comandes de Transferència de Fitxers i Web
+
+- **`curl`**: S'utilitza per fer peticions a servidors web des de la terminal. Per exemple, `curl -I` serveix per veure només les capçaleres de resposta del servidor (útil per verificar si hi ha connexió).
+    
+- **`wget`**: Una eina per descarregar fitxers o pàgines web senceres. Amb paràmetres addicionals (com es suggereix al repte 2), permet fer descàrregues recursives per baixar també les imatges i recursos d'una web.
+    
+
+### 3. Comandes de Diagnòstic i Traçabilitat
+
+- **`ping`**: Serveix per verificar si un host remot és accessible i per mesurar la latència (temps de resposta). També permet veure el TTL (_Time To Live_), que dóna una pista de quants salts hi ha fins al destí.
+    
+- **`traceroute`**: Mostra tot el camí que segueix un paquet des del teu equip fins al destí, detallant cada node o encaminador (salt) pel qual passa. És fonamental per detectar on es talla la comunicació en una xarxa complexa.
+    
+
+### 4. Comandes d'Exploració i Seguretat (Nmap)
+
+- **`nmap -sn [xarxa]`**: Realitza un _host discovery_ (escaneig de ping) per saber quins equips estan encesos en una xarxa determinada sense analitzar-ne els ports.
+    
+- **`nmap [IP]`**: Escaneja els ports més comuns d'un host per veure quins estan oberts (com el port 80 per HTTP o el 22 per SSH).
+    
+- **`nmap -p- [IP]`**: Escaneja els 65.535 ports existents d'un host (l'escaneig complet), ja que l'escaneig bàsic només en mira uns quants centenars.
+    
+- **`nmap -sV [IP]`**: Intenta detectar la versió del programari que corre en cada port obert (per exemple, saber quina versió exacta d'Apache o d'un servidor FTP s'està fent servir).
+    
+- **`nmap -O [IP]`**: Intenta detectar quin Sistema Operatiu (SO) està utilitzant el host objectiu basant-se en les respostes de la pila TCP/IP.
+    
+
+### 5. Gestió de Paquets (Utilitat del sistema)
+
+- **`apt update`** i **`apt install`**: S'utilitzen per actualitzar la llista de repositoris i instal·lar les eines necessàries (com `wget`, `traceroute` o `nmap`) en sistemes basats en Debian/Ubuntu.
