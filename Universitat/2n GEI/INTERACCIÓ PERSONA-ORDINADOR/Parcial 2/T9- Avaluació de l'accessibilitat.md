@@ -152,4 +152,35 @@ W3C → WAI → WCAG
 		- 4.1.1 (A) - Anàlisi sintàctica: La pàgina web ha d’estar ben formada, per que els lectors de pantalla pugin interpretar-les
 			- 4.1.1 – Evidentment, no hi pot haver errors de sintaxi en el codi de la pàgina. Encara que aquests errors no es vegin a la IU, poden confondre als lectors de pantalla
 
+### Avaluació
+
+##### Metodologia:
+- Web Accessibility Conformance Evaluation Methodology 
+- Metodologia d’avaluació de la WCAG:
+	1. Definició de l’abast (Que s’inclou, quina versió es farà servir (2.0, 2.1, 2.2) i nivell de conformitat (A, AA o AAA)​)
+	2. Exploració del lloc web (Identificar les pàgines web claus del lloc, les funcionalitats clau, tipus de continguts, funcionalitats i tecnologies web necessàries​)
+	3. Seleccionar una mostra representativa (Segurament no serà possible avaluar totes les pàgines. Cal seleccionar només algunes i indicar el criteri de selecció)
+	4. Avaluar la mostra (Determinar si compleix amb els criteris segons la versió i el nivell de conformitat triat en el pas 1. Si no, fer recomanacions per que es compleixin en un futur)
+	5. Fer un informe dels resultats de l’avaluació (Recopilar en un informe tot lo anterior)
+
+##### Easy checks
+- **Definició:**
+	- Proves ràpides per avaluar l’acompliment de requisits bàsics d’accessibilitat web
+
+- Proposats per la WAI, de la W3C per fer una primera avaluació ràpida d’accessibilitat
+- NO substitueix a una anàlisi en profunditat de l’accessibilitat, seguint la normativa WCAG amb els nivells de conformitat
+
+##### Eines
+- Existeixen eines automatitzades que ajuden a l’avaluació d’usabilitat de les pàgines web
+- Aquestes eines comproven el codi de la pàgina, però és necessària la revisió d’experts en usabilitat per a errors de context i validació de resultats
+  
+- **WAVE Web Accessiblity Evaluation Tool:**
+	- Desenvolupada per WebAIM 
+	- Extensió de navegador o eina online 
+	- Errors i avisos directament sobre la pàgina analitzada
+- **Lighthouse**
+	- Integrada en Chrome Navigator 
+	- Genera informes automàtics 
+	- Dona recomanacions basades en les WCAG
+
 
