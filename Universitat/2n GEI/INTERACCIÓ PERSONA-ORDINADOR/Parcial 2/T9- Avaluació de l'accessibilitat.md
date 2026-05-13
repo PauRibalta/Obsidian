@@ -141,7 +141,7 @@ W3C → WAI → WCAG
 		- 3.1.2 (AA) – Idioma de les parts: Si hi ha paraules en un altre idioma, ha d’haver una alternativa en l’idioma de la pàgina i al codi s’ha d’indicar per que el lector de pantalla ho pronuncií correctament 
 			- 3.1.2 – Cal evitar paraules en altres idiomes, a no ser que siguin comunament acceptades o pertanyin al context especialitzat de la pàgina web (per exemple, es pot fer servir la paraula “web”)​
 		- 3.1.4 (AAA) - Abreviatures: Cal proporcionar el significat de les abreviatures el primer com que apareixen a la pàgina 
-			- 3.1.4 – Per exemple “Introdueix el codi postal (CP)”. A partir de llaors, ja es pot fer servir “CP”​
+			- 3.1.4 – Per exemple “Introdueix el codi postal (CP)”. A partir de llavors, ja es pot fer servir “CP”​
 		- 3.3.1 (A) - Identificació d’errors: Identificar clarament en quin camp s’ha produït l’error i donar una descripció molt clara dels motius de l’error 
 			- 3.3.1 - “S’ha produït un error” –> Quin? Com? A on?
 		- 3.3.2 (A) - Etiquetes o instruccions: Tots els camps d’un formulari han de tenir una etiqueta clara o instruccions de com omplir-lo
