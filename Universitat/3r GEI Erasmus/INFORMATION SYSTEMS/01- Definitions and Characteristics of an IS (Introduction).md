@@ -66,3 +66,29 @@ Knowledge pyramid (DIKW)
 ![[Pasted image 20260917150124.png]]
 
 Data volume decreases from the bottom to the top.
+
+## Functions
+
+Anthony's pyramid:
+- Way to classify theprocesses in an organization.
+
+![[Pasted image 20260918144135.png|512]]
+
+The operational level is easy to automize its activities as it is repetitive and you have an specific description of the process contrary to the control and strategical level.
+#### How to classify processes?
+
+- ##### Data
+	- Format changes layer to layer (more organised deppending on the layer).
+	- Frequency at which we access the data: very high in the operational level, and low at the strategical level.
+	- Source: at the operational level the all the data is inside the organisation, and in the strategy level it comes both from inside and outside the organisation.
+	
+- ##### Functionalities features
+	- Temporal horizon: larger at the strategical layer than at the operational level.
+	- Discrationality: low at the operational layer, and very high at the strategical level.
+	- Repetition: at the operational level the same activity is done all the time at the same way, and in the strategical level it changes time to time.
+
+#### Relation between the two pyramids
+
+![[Pasted image 20260918145812.png]]
+
+![[Pasted image 20260918150406.png]]
