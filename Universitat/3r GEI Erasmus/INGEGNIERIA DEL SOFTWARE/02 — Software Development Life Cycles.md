@@ -1,164 +1,339 @@
-## 1. Waterfall Model
+## 1. Software Development Process
 
-The **Waterfall model** defines a **linear sequence of predefined phases**, with no backtracking.
+> **Software Process:** the set of activities used to develop, deploy and maintain software.
+
+> **Software Lifecycle:** describes how these activities are organized over time.
+
+Main lifecycle examples:
+
+- **Waterfall**
+    
+- **Agile**
+    
+- **DevOps**
+    
+
+The lifecycle should be **designed according to the specific case**:
+
+- **XP** → small/medium teams with vague or rapidly changing requirements.
+    
+- **Critical applications** → require a more structured approach.
+    
+- **DevOps** → suitable for software offered **as a service**.
+    
+
+---
+
+# 2. Waterfall Model
+
+> **Waterfall Model:** a linear software lifecycle where development progresses through predefined phases with **no backtracking**.
+
+Proposed in **1970**.
 
 ### Phases
 
-**Feasibility → Requirements → Design → Implementation & Unit Testing → Integration & Testing → Deployment & Maintenance**
+**Feasibility → Requirements → Design → Implementation & Unit Testing → Integration & System Testing → Deployment → Maintenance**
 
-**Advantages: structured, predictable, documentation-heavy**
+Each phase ends with a **go/no-go decision**.
 
-### Key characteristics
+### Feasibility
 
-- Highly **structured** and predictable.
-    
-- Requires requirements to be **well-known and stable**.
-    
-- Uses **go/no-go decisions** between phases.
-    
-- Changes are difficult and expensive to accommodate.
-    
+Determines whether the project should proceed.
 
-### Main limitations
+Includes:
 
-- Assumes **stable requirements**.
+- **Buy vs. make**
     
-- Feedback arrives **late**.
+- Cost-benefit analysis
     
-- Change is difficult to manage.
+- Alternatives
     
-- Backtracking and iterations are common in practice.
+- Costs and resources
     
-- Poor fit for **dynamic or uncertain domains**.
+- Feasibility document
     
 
----
+### Requirements Analysis & Specification
 
-## 2. Deployment & Maintenance
+- Analyse the **domain**
+    
+- Identify requirements
+    
+- Derive the **specification**
+    
+- Identify stakeholders
+    
+
+### Design
+
+Defines:
+
+- System **architecture**
+    
+- Components/modules
+    
+- Relations between components
+    
+- Responsibilities
+    
+
+→ Produces a **system design document**.
+
+### Implementation & Unit Testing
+
+- Each elementary module is implemented.
+    
+- Each module is tested by the developer.
+    
+- Programs should include documentation.
+    
+
+### Integration & System Testing
+
+- Modules are integrated into subsystems.
+    
+- Subsystems are tested.
+    
+- The complete system is tested for overall properties.
+    
+- Example: **response time**.
+    
+- Alpha/beta testing may be used.
+    
+
+### Rough effort distribution
+
+> **Very rough estimate:**
+
+- **40%** → Requirements + Design
+    
+- **30%** → Implementation
+    
+- **30%** → Testing
+    
+
+The distribution can vary significantly between projects.
 
 ### Deployment
 
-Putting the application into operation and managing its different **installations and configurations**.
+> Distribute the application and manage its **installation and configuration**.
 
 ### Maintenance
 
-Changes made **after delivery**.
+> Changes made to software **after delivery**.
 
-> Software does not physically deteriorate. If a malfunction appears, the underlying cause was already present.
+Software does not physically deteriorate → maintenance is an unfortunate term.
 
-Maintenance can represent **more than 50% of total costs**.
+A malfunction is usually caused by something already present in the software.
 
-### Types of Maintenance
+**Maintenance represents >50% of total costs.**
 
-| Type           | Purpose                                                                                 | Effort put into |
-| -------------- | --------------------------------------------------------------------------------------- | --------------- |
-| **Corrective** | Fix defects                                                                             | 20%             |
-| **Adaptive**   | Adapt to changes in the operating environment                                           | 20%             |
-| **Perfective** | Extend functionality / improve non-functional requirements                              | 50%             |
-| **Preventive** | Improve the software to prevent future problems (e.g. refactoring). Used only sometimes |                 |
+|Type|Purpose|
+|---|---|
+|**Corrective**|Fix errors|
+|**Adaptive**|Adapt to environmental changes|
+|**Perfective**|Add functionality or improve non-functional properties|
+|**Preventive**|Reduce future problems|
 
----
+Approximate distribution:
 
-## 3. Cost of Delayed Corrections
-
-> **The later an error is discovered, the more expensive it is to correct.**
-
-Errors originating in **requirements** can be particularly expensive because many subsequent design and implementation decisions depend on them.
-
-**Requirements (1) → Design (5) → Code (10) → Unit Test (20) → Acceptance Test (50) →   Maintenance (100)**
-
-Earlier detection generally means **lower correction cost**.
-
----
-
-## 4. Why Does Software Evolve?
-
-Software changes because of:
-
-- **Changes in context** → e.g. company mergers, regulations.
+- Corrective → **20%**
     
-- **Changes in requirements** → new demands after a system version is released.
+- Adaptive → **20%**
     
-- **Wrong specifications** → incomplete or inaccurate requirements.
-    
-- **Requirements not initially known**.
-    
-
-> **Key principle:** anticipate change rather than simply reacting to it.
-
----
-
-# 5. Agile
-
-Agile emerged as a response to the **rigidity of Waterfall**.
-
-### Agile values
-
-- **Individuals & interactions** over processes & tools.
-    
-- **Working software** over comprehensive documentation.
-    
-- **Customer collaboration** over contract negotiation.
-    
-- **Responding to change** over following a plan.
-    
-
-### Main characteristics
-
-- **Iterative**
-    
-- **Incremental**
-    
-- Frequent delivery of working software.
-    
-- Requirements can evolve throughout development.
+- Perfective → **50%**
     
 
 ---
 
-## 6. Scrum
+# 3. Cost of Delayed Corrections
 
-Scrum organizes development into short **sprints**, typically **2–4 weeks**.
+The later an error is detected, the more expensive it is to correct.
+
+Approximate relative cost:
+
+**Requirements (1) → Design (5) → Code (10) → Unit Test (20) → Acceptance Test (50) → Maintenance (100)**
+
+→ Important reason for detecting problems **as early as possible**.
+
+---
+
+# 4. Why Software Evolves
+
+Software changes because:
+
+- **Context changes**
+    
+    - e.g. mergers, new regulations such as GDPR.
+        
+- **Requirements change**
+    
+    - User/business needs evolve.
+        
+- **Specifications may be wrong**
+    
+    - Domain may have been misunderstood.
+        
+- **Requirements may initially be unknown**
+    
+    - Some needs only become clear during development/use.
+        
+
+A cited European company survey found that around **20% of user requirements became obsolete after one year**.
+
+> **Goal:** anticipate change instead of simply suffering it.
+
+---
+
+# 5. Waterfall Limitations
+
+Waterfall works best when:
+
+- The domain is **perfectly understood**.
+    
+- Requirements are **known and stable**.
+    
+
+This situation is **rare**.
+
+Main problem:
+
+- Changes discovered late are expensive.
+    
+- Iterations are often necessary.
+    
+
+→ Software should be designed to support **cheap and reliable change**.
+
+---
+
+# 6. Agile Lifecycle
+
+> **Agile:** lifecycle focused on adapting to change through **iterative and incremental development**.
+
+Main characteristics:
+
+- Adaptation to changing requirements.
+    
+- Successive releases.
+    
+- Incremental development.
+    
+- Continuous feedback.
+    
+- Working software delivered progressively.
+    
+
+Examples:
+
+- **Scrum**
+    
+- **XP (Extreme Programming)**
+    
+
+---
+
+# 7. Scrum
+
+> **Scrum:** iterative and incremental Agile framework.
 
 ### Roles
 
-- **Product Owner**
-    
 - **Scrum Master**
     
-- **Development Team**
+- **Product Owner**
+    
+- **Development Team** (~7 people)
+    
+
+### Sprint
+
+A **Sprint** produces a potentially releasable product increment.
+
+According to the course:
+
+- Sprint duration: **4–7 weeks**.
     
 
 ### Workflow
 
 **Product Backlog → Sprint Backlog → Product Increment**
 
-- **Product Backlog:** prioritized work defined by the Product Owner.
+- **Product Backlog**
     
-- **Sprint Backlog:** tasks selected and expanded by the team for the sprint.
+    - Prioritized requirements/features.
+        
+    - Managed by the **Product Owner**.
+        
+- **Sprint Backlog**
     
-- **Increment:** potentially releasable product produced by the sprint.
+    - Tasks selected and expanded by the team.
+        
+- During a Sprint, the backlog is **frozen**.
     
-- **Daily Scrum:** short meeting for team coordination.
+- Unsatisfied requirements return to the Product Backlog.
     
 
-> Requirements are **frozen during a sprint**, but can change **between sprints**.
-
-![[Pasted image 20260917105643.png|532]]
+**Daily Scrum** → team coordination during the Sprint.
 
 ---
 
-# 7. DevOps
+# 8. Extreme Programming (XP)
 
-**DevOps = Development + Operations**
+XP focuses on:
 
-A development approach focused on **continuous implementation and delivery**.
+- **Time-to-market**
+    
+- Continuous adjustment
+    
+- Software that cannot be completely specified in advance.
+    
 
-### Main idea
+Important practices:
 
-Reduce the distance between **development and deployment**.
+### Test First
 
-It promotes:
+Testing is central to development.
+
+### Pair Programming
+
+Two developers work together on the same code.
+
+### Continuous Refactoring
+
+Continuously improve the internal structure of the code.
+
+→ Helps avoid uncontrolled **code-and-fix** development.
+
+---
+
+# 9. DevOps
+
+> **DevOps = Development + Operations**
+
+Traditional separation:
+
+**Developers**
+
+- Design
+    
+- Implementation
+    
+- Maintenance
+    
+- Testing
+    
+
+**Operations**
+
+- Installation
+    
+- Service operation
+    
+- Stability
+    
+
+DevOps reduces this separation through:
 
 - Communication
     
@@ -166,129 +341,398 @@ It promotes:
     
 - Integration
     
-- Automation
-    
-- Continuous Delivery
+- Continuous testing
     
 - Continuous monitoring
     
+- Quality assurance
+    
+- Automation
+    
 
-### DevOps team
+### Main idea
 
-A single team contains **heterogeneous skills** and is involved in both development and deployment.
+Development and Operations work as a **single heterogeneous team**.
 
-### Main goal
+Focus on:
 
-Instead of delivering a packaged product to install:
-
-> Deliver and maintain a **running, usable service**.
-
-Strong focus on:
-
+- Continuous delivery
+    
 - Automated deployment
     
 - Monitoring
     
-- Continuous releases
+- Easy and frequent releases
     
-- Feedback from operation back to development
+- Checking that the software operates correctly
+    
+
+> The output is not only software → it is a **service that is installed, functioning and usable**.
+
+Especially relevant for **software as a service**.
+
+---
+
+# 10. Waterfall vs Agile vs DevOps
+
+| Waterfall    | Agile                          | DevOps                      |                          |
+| ------------ | ------------------------------ | --------------------------- | ------------------------ |
+| Development  | Linear                         | Iterative/incremental       | Continuous               |
+| Requirements | Stable                         | Can change                  | Continuously adapted     |
+| Releases     | Mainly at end                  | Successive increments       | Continuous               |
+| Main focus   | Structured process             | Adaptation to change        | Development + Operations |
+| Suitable for | Well-known/stable requirements | Changing/vague requirements | Software as a service    |
+
+> Lifecycle choice depends on the **specific product and organization**.
+
+---
+
+# 11. Process vs Product
+
+> **Product = WHAT** is produced.  
+> **Process = HOW** it is produced.
+
+Both are important.
+
+Both have **quality**.
+
+> **Process quality influences product quality.**
+
+---
+
+# 12. Software Quality
+
+Quality can be considered at different levels:
+
+### Internal Quality
+
+Related to **how the software is internally structured**.
+
+### External Quality
+
+Related to qualities **perceived by the user**.
+
+**Process → Product**
+
+The quality of the development process can influence the quality of the final product.
+
+---
+
+## 12.1 Correctness
+
+> A software is **correct** if it satisfies its **specifications**.
+
+If specifications are formal:
+
+- Correctness can potentially be verified **mathematically**.
+    
+- It can be proved as a theorem.
+    
+- Or falsified through **counterexamples/testing**.
+    
+
+Correctness is defined as:
+
+- **YES / NO**
+    
+- There is no formal concept of a "degree of correctness".
+    
+- However, violations can have different **seriousness**.
+    
+
+ If the specification itself is wrong:  
+→ **Verification ≠ validation**.
+
+---
+
+## 12.2 Reliability
+
+> **Reliability:** probability of having **no malfunction during a certain period of time**.
+
+Informally:
+
+> The user can **trust the software**.
+
+---
+
+## 12.3 Robustness
+
+> **Robustness:** software behaves **reasonably under unexpected circumstances**.
+
+Examples:
+
+- Incorrect input.
+    
+- Hardware malfunctions.
     
 
 ---
 
-# 8. Waterfall vs Agile vs DevOps
+## 12.4 Performance
 
-![[Pasted image 20260917110043.png]]
+> **Performance:** efficient use of resources.
 
+Resources include:
 
+- Memory
+    
+- Processors
+    
+- Network bandwidth
+    
+
+Can be evaluated through:
+
+- **Complexity analysis**
+    
+- Performance evaluation
+    
+- Simulation/model-based evaluation
+    
+
+Performance can affect:
+
+- **Scalability**
+    
+- **Usability**
+    
+
+> **Scalability:** the solution continues to work when the scale of relevant characteristics changes.
+
+Example:
+
+- Small local network → Internet-scale system.
+    
 
 ---
 
-# 9. Software Quality Goals
+## 12.5 Usability
 
-Important quality attributes:
+> **Usability:** expected users find the software **easy to use**.
 
-- **Correctness** → meets the specification.
+Important:
+
+- Define the **expected users**.
     
-- **Reliability** → performs consistently.
+- Different users may have different usability requirements.
     
-- **Maintainability** → easy to modify and fix.
+
+Related terms:
+
+- **Ergonomic**
     
-- **Usability** → effective for intended users.
+- **User-friendly**
     
-- **Performance**
+
+Often related to the **user interface**:
+
+- Textual interface
     
-- **Portability**
+- Graphical interface
     
-- **Interoperability**
+
+Usability is:
+
+- Largely **subjective**
+    
+- Difficult to evaluate precisely.
     
 
 ---
 
-# 10. Choosing a Life Cycle
+## 12.6 Other Quality Attributes
 
-The appropriate life cycle depends on the **context and product**.
-### Waterfall
+### Maintainability
 
-Useful when requirements are **stable** and high structure is required.
-### Agile
+Ease of modifying and maintaining the software.
 
-Useful when requirements are **unclear or rapidly changing** and fast delivery is important.
-### DevOps
+### Reusability
 
-Useful for **continuously delivered services**, especially cloud/SaaS applications.
+Ability to reuse software components in other contexts.
 
----
+### Portability
 
-# 11. Rapid Prototyping (Apendix)
+Ability to adapt software to different **target environments**.
 
-Used when requirements are **unclear or changing**.
+### Interoperability
 
-- **Throw-away prototype** → used to clarify requirements, then discarded.
-    
-- **Evolutionary prototype** → progressively refined into the final system.
-    
-
-**Purpose:** reduce the risk of misunderstanding requirements.
+Ability to **coexist and cooperate with other applications**.
 
 ---
 
-# 12. Verification vs Validation (Apendix)
+# 13. Productivity
+
+> **Productivity:** quantity produced per unit of **effort**.
+
+### Effort
+
+Measured in:
+
+> **Person-month (pm)**
+
+**People and months are NOT interchangeable.**
+
+Adding more people does not necessarily reduce development time proportionally.
+
+### Measuring quantity
+
+Possible measures:
+
+- **Lines of code**
+    
+- Variations in lines of code
+    
+- **Function points**
+    
+
+---
+
+# 14. Productivity Data
+
+Example from the course:
+
+**135 Hewlett Packard projects**
+
+(excluding requirements analysis)
+
+→ **350 NCSS/person-month**
+
+Where:
+
+> **NCSS = Non-Comment Source Statements**
+
+> **pm = person-month**
+
+Important:
+
+- Extremely large variation between individuals.
+    
+- Extremely large variation due to the **group effect**.
+    
+
+### Brooks' Law
+
+> **"Adding people to a late project makes the project late."**
+
+→ Adding people to an already delayed project can introduce additional coordination/communication effort.
+
+---
+
+# 15. Lifecycle Selection
+
+There is **no single lifecycle suitable for every project**.
+
+|Situation|Appropriate characteristics|
+|---|---|
+|Stable, well-known requirements|Structured approach|
+|Vague/changing requirements|Agile / XP|
+|Small/medium team|XP can be suitable|
+|Critical application|More structured approach|
+|Software as a service|DevOps can be suitable|
+
+> **The lifecycle must be designed according to the specific case.**
+
+---
+
+# 16. Verification vs Validation
 
 ### Verification
 
-> **Does the software meet its specification?**
+> Does the software satisfy its **specifications**?
 
 ### Validation
 
-> **Does the software meet user expectations?**
+> Does the software satisfy the **client's expectations**?
 
-If the specification correctly represents user expectations, verification and validation should align.
+If the specifications correctly capture the client's expectations:
+
+**Verification ≈ Validation**
+
+If the specification is wrong:
+
+**Correct software ≠ useful software**
+
+---
+
+# 17. Rapid Prototyping
+
+A **prototype** is an early version of a system used to explore:
+
+- Requirements
+    
+- Design
+    
+- Feasibility
+    
+- User interaction
+    
+
+Useful when requirements are unclear.
 
 ---
 
 # Exam Essentials
 
-- **Waterfall** = linear, structured, stable requirements, difficult to change.
+- **Waterfall:** linear, predefined phases, no backtracking.
     
-- **Agile** = iterative + incremental + responds to change.
+- Waterfall proposed in **1970**.
     
-- **Scrum** = short **sprints** + Product Owner + Scrum Master + Development Team.
+- Waterfall is suitable mainly when requirements are **known and stable**.
     
-- **Sprint** → requirements are frozen during the sprint but adaptable between sprints.
+- Waterfall phases: **Feasibility → Requirements → Design → Implementation & Unit Testing → Integration & System Testing → Deployment → Maintenance**.
     
-- **DevOps** = Development + Operations → continuous delivery, automation and monitoring.
+- Rough effort: **40% Requirements + Design / 30% Implementation / 30% Testing**.
     
-- **Maintenance** is a major part of software costs.
+- Maintenance accounts for **>50% of total costs**.
     
-- Maintenance types: **Corrective, Adaptive, Perfective, Preventive**.
+- Main maintenance types: **corrective, adaptive, perfective, preventive**.
     
-- **The later an error is detected, the more expensive it is to fix.**
+- Software evolves because **context, requirements, specifications and knowledge change**.
     
-- Software evolves because of **context changes, requirement changes, wrong specifications and unknown requirements**.
+- **Agile:** iterative + incremental + adaptation to change.
     
-- **Verification** = meets specification.
+- **Scrum:** Product Backlog → Sprint Backlog → Product Increment.
     
-- **Validation** = meets user expectations.
+- Scrum roles: **Scrum Master, Product Owner, Team**.
     
-- Life-cycle choice depends on the **context and product**.
+- Course Sprint duration: **4–7 weeks**.
+    
+- **XP:** Test First, Pair Programming, Continuous Refactoring.
+    
+- **DevOps = Development + Operations**, emphasizing collaboration, automation, continuous delivery and monitoring.
+    
+- **Product = WHAT; Process = HOW.**
+    
+- **Process quality influences product quality.**
+    
+- **Internal quality** → internal structure.
+    
+- **External quality** → user-perceived quality.
+    
+- **Correctness** → satisfies specifications.
+    
+- **Reliability** → probability of no malfunction for a given period.
+    
+- **Robustness** → reasonable behaviour under unexpected circumstances.
+    
+- **Performance** → efficient resource usage; affects scalability/usability.
+    
+- **Usability** → ease of use for expected users.
+    
+- Other qualities: **maintainability, reusability, portability, interoperability**.
+    
+- **Productivity = quantity produced / effort**.
+    
+- Effort measured in **person-months**.
+    
+- **People and months are not interchangeable.**
+    
+- Productivity can be measured using **LOC/NCSS or function points**.
+    
+- **Brooks' Law:** adding people to a late project makes the project late.
+    
+- **Verification:** satisfies specifications.
+    
+- **Validation:** satisfies client expectations.
+    
+- **Lifecycle choice depends on the specific product and organization.**
