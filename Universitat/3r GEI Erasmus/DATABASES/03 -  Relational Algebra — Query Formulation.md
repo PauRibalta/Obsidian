@@ -381,6 +381,8 @@ AtLeast3 − AtLeast4
 
 Then join with `STUDENT` to obtain the names.
 
+![[Pasted image 20260922152138.png]]
+
 ---
 
 # 21. Difference for "Never" 
@@ -410,6 +412,8 @@ Conceptually:
 
 Always >28=AtLeastOne−AtLeastOne Bad
 
+![[Pasted image 20260922153447.png|523]]
+
 ---
 
 # 23. "Always OR Never"
@@ -425,6 +429,8 @@ Conceptually:
 ```text
 (always > 28) ∪ (never examined)
 ```
+
+![[Pasted image 20260922153511.png|524]]
 
 ---
 
@@ -448,6 +454,8 @@ AND
 Date = Date'
 ```
 
+![[Pasted image 20260922153941.png|484]]
+
 ---
 
 # 25. Finding the First Exam 
@@ -461,6 +469,10 @@ Steps:
 1. Find exams that have a previous exam.
 2. Subtract them from all exams.
 3. Remaining exams = first exam(s).
+
+![[Pasted image 20260922154915.png]]
+
+We could use EXAM' and date'. The join in this query is not an equijoin as we are not looking for an equality.
 
 ---
 
@@ -484,6 +496,10 @@ All exams - Exams preceded by another exam of the same student
 
 → first exam(s) of each student.
 
+![[Pasted image 20260922155311.png]]
+
+We can use EXAM', SId' and Date' here as well.
+
 ---
 
 # 27. Query Strategy
@@ -506,14 +522,14 @@ Typical strategy:
 
 ## Operators
 
-- Selection → σ\sigma
-- Projection → Π\Pi
-- Union → ∪\cup
-- Difference → −-
-- Intersection → ∩\cap
-- Cartesian product → ×\times
-- Join → ⋈\bowtie
-- Redenomination → ρ\rho
+- Selection → σ
+- Projection → Π
+- Union → ∪
+- Difference → -
+- Intersection → ∩
+- Cartesian product → ×
+- Join → ⋈
+- Redenomination → ρ
 - Assignment → `:=`
 
 ## What Each Operator Does
