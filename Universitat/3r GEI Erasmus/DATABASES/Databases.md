@@ -1,3 +1,6 @@
 [[01 - Databases — A Quick Introduction]]
 [[02 - The Relational Data Model — Structure]]
 [[03 -  Relational Algebra — Query Formulation]]
+[[04 - Datalog]]
+[[05 -  Optimization of Algebraic Expressions]]
+[[06 - SQL — Part 1 - SPJ, Set Operators and Aggregates]]

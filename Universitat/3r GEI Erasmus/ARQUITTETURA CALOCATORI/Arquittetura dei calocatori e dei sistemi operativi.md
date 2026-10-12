@@ -2,3 +2,6 @@
 [[02 -  RISC-V Assembler — Instruction Set]]
 [[03 -  RISC-V Assembler — Instruction Formats]]
 [[04 - From C to RISC-V Assembler]]
+[[05 - Procedures and stack management]]
+[[06 - RISC-V Assembler and Linker]]
+[[07 - Computer Architecture — Combinational Logic Networks]]

@@ -18,7 +18,7 @@ A class:
 - Attributes characterize the state of individual objects.
 - Methods manipulate objects.
 - The main program is represented by the special `main` method.
-
+	
 ```java
 public class HelloWorld {
     public static void main(String[] args) {

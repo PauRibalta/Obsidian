@@ -58,7 +58,8 @@ Today's format:
 Each application composed of 3 layers (Logical layers) 
 - Presentation (P): how it interacts with users (GUI, CLI (command line interface)).
 - Application logic (L): functionalities implementation.
-- Data access layer (D): interaction (read / write) with data.
+- Data access logic (D): interaction (read / write) with data.
 - P and L are the front-end and D is the back-end.
 
 ![[Pasted image 20260924150935.png|595]]
+
