@@ -5,3 +5,7 @@
 [[05 - Procedures and stack management]]
 [[06 - RISC-V Assembler and Linker]]
 [[07 - Computer Architecture — Combinational Logic Networks]]
+[[08 - Sequential Logic Circuits 1]]
+[[09 -Computer Architecture — RISC-V Sequential Blocks and Register File]]
+[[10 - Computer Architecture — RISC-V Processor, Single-Cycle Implementation]]
+[[11 - Computer Architecture — RISC-V Pipelining]]
