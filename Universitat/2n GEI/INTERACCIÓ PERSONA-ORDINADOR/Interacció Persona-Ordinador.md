@@ -3,5 +3,7 @@
 [[T6-Interfície d'usuari]]
 [[T7- El factor humà]]
 [[T8- Avaluació de la Usabilitat]]
+[[T9- Avaluació de l'accessibilitat]]
+[[T9- Avaluació de l'accessibilitat.pdf]]
 
 Web amb recursos de la matèria https://curso-ipo.com/

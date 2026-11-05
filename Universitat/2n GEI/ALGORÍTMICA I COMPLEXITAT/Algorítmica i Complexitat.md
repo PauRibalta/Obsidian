@@ -2,5 +2,6 @@
 [[T2-Anàlisi d'algorismes]]
 [[T3-Recursivitat]]
 [[T4-Divideix i venç]]
+[[T5]]
 
 

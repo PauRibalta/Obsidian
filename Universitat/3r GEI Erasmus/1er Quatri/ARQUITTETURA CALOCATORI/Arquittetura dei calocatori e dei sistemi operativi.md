@@ -9,3 +9,7 @@
 [[09 -Computer Architecture — RISC-V Sequential Blocks and Register File]]
 [[10 - Computer Architecture — RISC-V Processor, Single-Cycle Implementation]]
 [[11 - Computer Architecture — RISC-V Pipelining]]
+[[12 -  Computer Architecture — RISC-V Pipelining, Control Hazards]]
+[[13 - Computer Architecture — Memory Hierarchy and Cache]]
+[[Lecture 1 – Processes and Parallelism]]
+[[Lezione 2 – Threads]]

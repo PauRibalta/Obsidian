@@ -3,3 +3,6 @@
 [[03 - Business processes]]
 [[04 - Applications. Functional Perspective]]
 [[05 - Applications. Application portfolio of an organization]]
+[[06 - Data Warehousing]]
+[[07 - Data Mining]]
+[[08 - Integration Approaches]]

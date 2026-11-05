@@ -109,7 +109,7 @@ The first 4 can be performed and executed by the ETL tool.
 
 **Focus on point number 5:**
 
-Captura pantalla 15:52
+![[Pasted image 20261105133354.png|485]]
 
 #### Classification of DM algorithms
 1. 

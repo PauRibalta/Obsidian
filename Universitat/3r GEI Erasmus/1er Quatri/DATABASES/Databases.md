@@ -4,3 +4,6 @@
 [[04 - Datalog]]
 [[05 -  Optimization of Algebraic Expressions]]
 [[06 - SQL — Part 1 - SPJ, Set Operators and Aggregates]]
+[[07 - Databases — SQL Part 2, Grouping and Nesting]]
+[[08 - SQL Language Part3 DDL, DML Views and Privileges]]
+[[09 - Conceptual Database Design]]
